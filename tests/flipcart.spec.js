@@ -6,7 +6,7 @@ test('frame',async({page})=>{
 
 await frame3_2.locator("#firstName").fill("deva");
 await page.waitForTimeout(3000);
-
+await page.waitForTimeout(4000);
 
    
 
