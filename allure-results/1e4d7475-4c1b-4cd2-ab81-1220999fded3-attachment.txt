@@ -1,0 +1,16 @@
+2
+[
+  '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '    \n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '    SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know  AppleiPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black 4.64.6 out of 5 stars (684)  5K+ bought in past monthPrice, product page₹99,900₹99,900Up to 5% back with Amazon Pay ICICI cardUp to 5% back with Amazon Pay ICI...FREE delivery 20 - 28 SeptAdd to cart+1 other color/pattern\n' +
+    '\n' +
+    '\n' +
+    '\n',
+  'AppleiPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black 4.64.6 out of 5 stars (684)  5K+ bought in past monthPrice, product page₹99,900₹99,900Up to 5% back with Amazon Pay ICICI cardUp to 5% back with Amazon Pay ICI...FREE delivery 20 - 28 SeptAdd to cart'
+]

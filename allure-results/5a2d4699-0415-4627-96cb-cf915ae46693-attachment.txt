@@ -1,0 +1,2 @@
+Minimum price below ₹500: Infinity
+Product: 

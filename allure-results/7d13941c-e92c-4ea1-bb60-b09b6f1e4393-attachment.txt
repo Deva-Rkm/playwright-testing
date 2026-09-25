@@ -1,0 +1,102 @@
+product titles= [
+  'Men Printed Cotton T-shirt',
+  'Polo Collar Pure Cotton Tshirt',
+  'Solid Lounge T-shirt',
+  'Solid Lounge T-shirt',
+  'Men Training or Gym T-shirt',
+  'Men Solid Lounge T-shirt',
+  'Men Digital Print Polo Tee',
+  'Polo Collar T-shirt',
+  'Solid Lounge T-shirt',
+  'Men Printed T-shirt',
+  'Men Typography Printed T-shirt',
+  'Men Polo Collar T-shirt',
+  'Men Polo Collar T-shirt',
+  'Band Collar Cotton T-shirt',
+  'Solid V-Neck Lounge T-shirt',
+  'Men Colourblocked Polo Collar T-shirt',
+  'Men Brand Logo Polo Collar Pockets T-shirt',
+  'Men MI IPL FAN JERSEY',
+  'Men Waffle Fabric Polo T Shirt',
+  'Men Brand Logo Polo Collar T-shirt',
+  'Pure Cotton Lounge Tshirt',
+  'Men Lounge T-Shirt',
+  'Men Solid Lounge Tshirt',
+  'Dyed Pure Cotton T-shirt',
+  'Terry Oversized Tshirt',
+  'Cotton Oversized T-shirt',
+  'Train All Day Men Tee',
+  'Men Henley Neck T-shirt',
+  'Printed Oversized T-shirt',
+  'Solid Lounge T-shirt',
+  'Men Printed Polo Collar Pockets T-shirt',
+  'Men Lounge Tshirts',
+  'Men Polo Collar T-shirt',
+  'Printed Polo Tshirts For Men',
+  'Men Brand Logo Polo Collar T-shirt',
+  'Men Henley Neck T-shirt',
+  'Men Half Sleeve Polo T Shirt',
+  'Men Brand Logo Printed Boxy T-shirt',
+  'Waffle Plain Tshirt',
+  'Men Henley Neck T-shirt',
+  'Henley Neck T-shirt',
+  'Men Henley Neck T-shirt',
+  'Men Brand Logo Printed Boxy T-shirt',
+  'Pure Cotton T-shirt',
+  'Men Henley Neck T-shirt',
+  'Men Henley Neck T-shirt',
+  'Oversized Cotton T-shirt',
+  'Men Henley Neck T-shirt',
+  'Men Graphic T-shirt',
+  'Polo Collar Pure Cotton Tshirt'
+]
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}
+${index + 1}.${title}

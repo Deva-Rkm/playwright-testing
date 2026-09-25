@@ -1,0 +1,1365 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: flipcart.spec.js >> flipcart_products
+- Location: tests\flipcart.spec.js:5:5
+
+# Error details
+
+```
+Test timeout of 120000ms exceeded.
+```
+
+```
+Error: page.waitForSelector: Test timeout of 120000ms exceeded.
+Call log:
+  - waiting for locator('div._30jeq3, div._1vC4OE, span._2UzuFa') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: mens shirts
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3Dmens%2Bshirts%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - link "spoyl spoyl Textured Shirts, Tops... Up to 85% Off + Extra 15% Off" [ref=e78] [cursor=pointer]:
+          - /url: /clothing-and-accessories/topwear/pr?sid=clo%2Cash&p%5B%5D=facets.trend_markers%3D1&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlRleHR1cmVkIFNoaXJ0cywgVG9wcy4uLiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInNlYXJjaFF1ZXJ5SW5Ccm93c2UiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5Ijoic2VhcmNoUXVlcnlJbkJyb3dzZSIsImluZmVyZW5jZVR5cGUiOiJRVUVSWV9GQUNFVCIsInZhbHVlIjoibWVucyBzaGlydHMiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&otracker=sp_browse_announcement_search.flipkart.com
+          - generic [ref=e80]:
+            - img "spoyl" [ref=e81]
+            - img "spoyl" [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]: Textured Shirts, Tops...
+            - generic [ref=e85]: Up to 85% Off + Extra 15% Off
+        - generic [ref=e88]:
+          - generic [ref=e91]: Filters
+          - generic [ref=e93]:
+            - generic [ref=e94]: CATEGORIES
+            - generic [ref=e96]:
+              - img [ref=e98] [cursor=pointer]
+              - link "Clothing and Accessories" [ref=e100] [cursor=pointer]:
+                - /url: /clothing-and-accessories/pr?sid=clo&q=mens+shirts&otracker=categorytree
+            - generic [ref=e102]:
+              - img [ref=e104] [cursor=pointer]
+              - link "Topwear" [ref=e106] [cursor=pointer]:
+                - /url: /clothing-and-accessories/topwear/pr?sid=clo,ash&q=mens+shirts&otracker=categorytree
+            - generic [ref=e108]:
+              - img [ref=e110] [cursor=pointer]
+              - link "Shirts" [ref=e112] [cursor=pointer]:
+                - /url: /clothing-and-accessories/topwear/shirts/pr?sid=clo,ash,axc&q=mens+shirts&otracker=categorytree
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - img [ref=e116] [cursor=pointer]
+                - link "Men's Shirts" [ref=e118] [cursor=pointer]:
+                  - /url: /mens-shirts/pr?sid=clo,ash,axc,mmk&q=mens+shirts&otracker=categorytree
+              - generic [ref=e119]:
+                - link "Casual Shirts" [ref=e120] [cursor=pointer]:
+                  - /url: /mens-shirts/casual-shirts/pr?sid=clo,ash,axc,mmk,kp7&q=mens+shirts&otracker=categorytree
+                - link "Formal Shirts" [ref=e121] [cursor=pointer]:
+                  - /url: /mens-shirts/formal-shirts/pr?sid=clo,ash,axc,mmk,bk1&q=mens+shirts&otracker=categorytree
+          - generic [ref=e123] [cursor=pointer]:
+            - generic [ref=e124]: Brand
+            - img [ref=e125]
+          - generic [ref=e128] [cursor=pointer]:
+            - generic [ref=e129]: Color
+            - img [ref=e130]
+          - generic [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]: Size
+            - img [ref=e135]
+          - generic [ref=e138] [cursor=pointer]:
+            - generic [ref=e139]: fabric
+            - img [ref=e140]
+          - generic [ref=e143] [cursor=pointer]:
+            - generic [ref=e144]: Pattern
+            - img [ref=e145]
+          - generic [ref=e148] [cursor=pointer]:
+            - generic [ref=e149]: Fit
+            - img [ref=e150]
+          - generic [ref=e153] [cursor=pointer]:
+            - generic [ref=e154]: Occasion
+            - img [ref=e155]
+          - generic [ref=e157]:
+            - generic [ref=e159]: Price
+            - generic [ref=e176]:
+              - generic [ref=e177]: .
+              - generic [ref=e178]: .
+              - generic [ref=e179]: .
+              - generic [ref=e180]: .
+              - generic [ref=e181]: .
+              - generic [ref=e182]: .
+              - generic: .
+            - generic [ref=e183]:
+              - combobox [ref=e185]:
+                - option "Min" [selected]
+                - option "₹300"
+                - option "₹500"
+                - option "₹700"
+                - option "₹1000"
+                - option "₹1500"
+              - generic [ref=e186]: to
+              - combobox [ref=e188]:
+                - option "₹300"
+                - option "₹500"
+                - option "₹700"
+                - option "₹1000"
+                - option "₹1500"
+                - option "₹1500+" [selected]
+          - generic [ref=e190] [cursor=pointer]:
+            - generic [ref=e191]: Sleeves
+            - img [ref=e192]
+          - generic [ref=e195] [cursor=pointer]:
+            - generic [ref=e196]: Collar
+            - img [ref=e197]
+          - generic [ref=e199]:
+            - generic [ref=e200] [cursor=pointer]:
+              - generic [ref=e201]: Customer Ratings
+              - img [ref=e202]
+            - generic [ref=e205]:
+              - generic "4★ & above" [ref=e206] [cursor=pointer]:
+                - generic [ref=e210]: 4★ & above
+              - generic "3★ & above" [ref=e211] [cursor=pointer]:
+                - generic [ref=e215]: 3★ & above
+          - generic [ref=e216]:
+            - img [ref=e221] [cursor=pointer]
+            - generic [ref=e223] [cursor=pointer]: "?"
+          - generic [ref=e225] [cursor=pointer]:
+            - generic [ref=e226]: Pack of
+            - img [ref=e227]
+          - generic [ref=e230] [cursor=pointer]:
+            - generic [ref=e231]: Discount
+            - img [ref=e232]
+          - generic [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: Gender
+            - img [ref=e237]
+          - generic [ref=e240] [cursor=pointer]:
+            - generic [ref=e241]: New Arrivals
+            - img [ref=e242]
+          - generic [ref=e244]:
+            - generic [ref=e245] [cursor=pointer]:
+              - generic [ref=e246]: Offers
+              - img [ref=e247]
+            - generic [ref=e250]:
+              - generic "Buy More, Save More" [ref=e251] [cursor=pointer]:
+                - generic [ref=e255]: Buy More, Save More
+              - generic "Special Price" [ref=e256] [cursor=pointer]:
+                - generic [ref=e260]: Special Price
+          - generic [ref=e262] [cursor=pointer]:
+            - generic [ref=e263]: Availability
+            - img [ref=e264]
+      - generic [ref=e266]:
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - link "Home" [ref=e272] [cursor=pointer]:
+                - /url: /
+              - img [ref=e273]
+            - generic [ref=e275]:
+              - link "Clothing and Accessories" [ref=e276] [cursor=pointer]:
+                - /url: /clothing-and-accessories/pr?sid=clo&marketplace=FLIPKART
+              - img [ref=e277]
+            - generic [ref=e279]:
+              - link "Topwear" [ref=e280] [cursor=pointer]:
+                - /url: /clothing-and-accessories/topwear/pr?sid=clo,ash&marketplace=FLIPKART
+              - img [ref=e281]
+            - generic [ref=e283]:
+              - link "Shirts" [ref=e284] [cursor=pointer]:
+                - /url: /clothing-and-accessories/topwear/shirts/pr?sid=clo,ash,axc&marketplace=FLIPKART
+              - img [ref=e285]
+            - link "Men's Shirts" [ref=e288] [cursor=pointer]:
+              - /url: /mens-shirts/pr?sid=clo,ash,axc,mmk&marketplace=FLIPKART
+          - generic [ref=e289]: Showing 1 – 40 of 21,124 results for "mens shirts"
+          - generic [ref=e290]:
+            - generic [ref=e291]: Sort By
+            - generic [ref=e292]: Relevance
+            - generic [ref=e293] [cursor=pointer]: Popularity
+            - generic [ref=e294] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e295] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e296] [cursor=pointer]: Newest First
+        - generic [ref=e298]:
+          - generic [ref=e300]:
+            - link [ref=e301] [cursor=pointer]:
+              - /url: /cahoot-men-checkered-casual-black-shirt/p/itmbe45af2a8deb4?pid=SHTGN4DHFGZVHCH7&lid=LSTSHTGN4DHFGZVHCH7XB0IVT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESLAnNwn534y3dmP2vh9_junpsF0TSPEeoQPPH9bJ1Vu1qeMAPw75BzeNfaXDeMDZNzPB47eZCIQrj0F3t7G3WJE&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e308]
+            - generic [ref=e310]:
+              - img [ref=e312]
+              - generic [ref=e315]: CAHOOT
+              - link "Men Regular Fit Checkered Casual Shirt" [ref=e316] [cursor=pointer]:
+                - /url: /cahoot-men-checkered-casual-black-shirt/p/itmbe45af2a8deb4?pid=SHTGN4DHFGZVHCH7&lid=LSTSHTGN4DHFGZVHCH7XB0IVT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESLAnNwn534y3dmP2vh9_junpsF0TSPEeoQPPH9bJ1Vu1qeMAPw75BzeNfaXDeMDZNzPB47eZCIQrj0F3t7G3WJE&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e318]
+              - link "₹719 ₹1,599 55% off" [ref=e319] [cursor=pointer]:
+                - /url: /cahoot-men-checkered-casual-black-shirt/p/itmbe45af2a8deb4?pid=SHTGN4DHFGZVHCH7&lid=LSTSHTGN4DHFGZVHCH7XB0IVT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESLAnNwn534y3dmP2vh9_junpsF0TSPEeoQPPH9bJ1Vu1qeMAPw75BzeNfaXDeMDZNzPB47eZCIQrj0F3t7G3WJE&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e320]:
+                  - generic [ref=e321]: ₹719
+                  - generic [ref=e322]: ₹1,599
+                  - generic [ref=e323]: 55% off
+          - generic [ref=e325]:
+            - link [ref=e326] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-purple-shirt/p/itm76abeb34258cb?pid=SHTHMJZTD2PU8VVR&lid=LSTSHTHMJZTD2PU8VVRAJODVH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJyxrEMrbt3HVkmyOzlAy3hbEOE-Ho9txKFbYCmuPCstYjdvqeafbSxPEgVQziOXR3TD1xFzRtCDodyKqtflOyl&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e333]
+            - generic [ref=e335]:
+              - img [ref=e337]
+              - generic [ref=e340]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e341] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itm76abeb34258cb?pid=SHTHMJZTD2PU8VVR&lid=LSTSHTHMJZTD2PU8VVRAJODVH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJyxrEMrbt3HVkmyOzlAy3hbEOE-Ho9txKFbYCmuPCstYjdvqeafbSxPEgVQziOXR3TD1xFzRtCDodyKqtflOyl&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e343]
+              - link "₹263 ₹1,199 78% off" [ref=e344] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itm76abeb34258cb?pid=SHTHMJZTD2PU8VVR&lid=LSTSHTHMJZTD2PU8VVRAJODVH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJyxrEMrbt3HVkmyOzlAy3hbEOE-Ho9txKFbYCmuPCstYjdvqeafbSxPEgVQziOXR3TD1xFzRtCDodyKqtflOyl&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e345]:
+                  - generic [ref=e346]: ₹263
+                  - generic [ref=e347]: ₹1,199
+                  - generic [ref=e348]: 78% off
+              - generic [ref=e351]: Hot Deal
+          - generic [ref=e353]:
+            - link [ref=e354] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-grey-shirt/p/itm557e00c09f4a7?pid=SHTHYSNJTYJQMHJG&lid=LSTSHTHYSNJTYJQMHJGJXLBLN&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHYSNJTYJQMHJG.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e361]
+            - generic [ref=e363]:
+              - generic [ref=e364]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e365] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-grey-shirt/p/itm557e00c09f4a7?pid=SHTHYSNJTYJQMHJG&lid=LSTSHTHYSNJTYJQMHJGJXLBLN&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHYSNJTYJQMHJG.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e367]
+              - link "₹253 ₹1,999 87% off" [ref=e368] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-grey-shirt/p/itm557e00c09f4a7?pid=SHTHYSNJTYJQMHJG&lid=LSTSHTHYSNJTYJQMHJGJXLBLN&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHYSNJTYJQMHJG.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e369]:
+                  - generic [ref=e370]: ₹253
+                  - generic [ref=e371]: ₹1,999
+                  - generic [ref=e372]: 87% off
+              - generic [ref=e375]: Hot Deal
+          - generic [ref=e377]:
+            - link [ref=e378] [cursor=pointer]:
+              - /url: /xenor-men-striped-casual-blue-shirt/p/itme08a013781a2d?pid=SHTHPJ96QDEQGWHD&lid=LSTSHTHPJ96QDEQGWHDWABQSD&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPJ96QDEQGWHD.SEARCH&ppt=sp&ppn=sp&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e385]
+            - generic [ref=e387]:
+              - generic [ref=e388]: XENOR
+              - link "Men Slim Fit Striped Casual Shirt" [ref=e389] [cursor=pointer]:
+                - /url: /xenor-men-striped-casual-blue-shirt/p/itme08a013781a2d?pid=SHTHPJ96QDEQGWHD&lid=LSTSHTHPJ96QDEQGWHDWABQSD&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPJ96QDEQGWHD.SEARCH&ppt=sp&ppn=sp&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e391]
+              - link "₹261 ₹1,999 86% off" [ref=e392] [cursor=pointer]:
+                - /url: /xenor-men-striped-casual-blue-shirt/p/itme08a013781a2d?pid=SHTHPJ96QDEQGWHD&lid=LSTSHTHPJ96QDEQGWHDWABQSD&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPJ96QDEQGWHD.SEARCH&ppt=sp&ppn=sp&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e393]:
+                  - generic [ref=e394]: ₹261
+                  - generic [ref=e395]: ₹1,999
+                  - generic [ref=e396]: 86% off
+              - generic [ref=e399]: Only few left
+        - generic [ref=e401]:
+          - generic [ref=e403]:
+            - link [ref=e404] [cursor=pointer]:
+              - /url: /shimak-international-men-striped-casual-white-blue-shirt/p/itmfbfc20e804045?pid=SHTHHKRWZCM8UBKM&lid=LSTSHTHHKRWZCM8UBKMKDSWHJ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIDaICbipzpXbzXhlfBCqJx0piv75iF7HUJEX4WDA8BBwaM0nG6nuy3k2dxk7EfnRhKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e411]
+            - generic [ref=e413]:
+              - img [ref=e415]
+              - generic [ref=e418]: Shimak International
+              - link "Men Regular Fit Striped Spread Collar Casual Shirt" [ref=e419] [cursor=pointer]:
+                - /url: /shimak-international-men-striped-casual-white-blue-shirt/p/itmfbfc20e804045?pid=SHTHHKRWZCM8UBKM&lid=LSTSHTHHKRWZCM8UBKMKDSWHJ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIDaICbipzpXbzXhlfBCqJx0piv75iF7HUJEX4WDA8BBwaM0nG6nuy3k2dxk7EfnRhKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹263 ₹1,299 79% off" [ref=e420] [cursor=pointer]:
+                - /url: /shimak-international-men-striped-casual-white-blue-shirt/p/itmfbfc20e804045?pid=SHTHHKRWZCM8UBKM&lid=LSTSHTHHKRWZCM8UBKMKDSWHJ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIDaICbipzpXbzXhlfBCqJx0piv75iF7HUJEX4WDA8BBwaM0nG6nuy3k2dxk7EfnRhKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e421]:
+                  - generic [ref=e422]: ₹263
+                  - generic [ref=e423]: ₹1,299
+                  - generic [ref=e424]: 79% off
+              - generic [ref=e427]: Hot Deal
+          - generic [ref=e429]:
+            - link [ref=e430] [cursor=pointer]:
+              - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itmd2629fb0af30d?pid=SHTHGKB7QUCHF7PM&lid=LSTSHTHGKB7QUCHF7PMQZOAGW&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIGjtflR1wbnGGohJFgPYwdEAKSOvsFRLc5I7eD7V7z6Fiqvy7D-7LFAv2jg8Z3EE6huXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e437]
+            - generic [ref=e439]:
+              - img [ref=e441]
+              - generic [ref=e444]: CAHOOT
+              - link "Men Regular Fit Checkered Spread Collar Casual Shirt" [ref=e445] [cursor=pointer]:
+                - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itmd2629fb0af30d?pid=SHTHGKB7QUCHF7PM&lid=LSTSHTHGKB7QUCHF7PMQZOAGW&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIGjtflR1wbnGGohJFgPYwdEAKSOvsFRLc5I7eD7V7z6Fiqvy7D-7LFAv2jg8Z3EE6huXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e447]
+              - link "₹1,199 ₹1,999 40% off" [ref=e448] [cursor=pointer]:
+                - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itmd2629fb0af30d?pid=SHTHGKB7QUCHF7PM&lid=LSTSHTHGKB7QUCHF7PMQZOAGW&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIGjtflR1wbnGGohJFgPYwdEAKSOvsFRLc5I7eD7V7z6Fiqvy7D-7LFAv2jg8Z3EE6huXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e449]:
+                  - generic [ref=e450]: ₹1,199
+                  - generic [ref=e451]: ₹1,999
+                  - generic [ref=e452]: 40% off
+              - generic [ref=e455]: Hot Deal
+          - generic [ref=e457]:
+            - link [ref=e458] [cursor=pointer]:
+              - /url: /sh-fsn-men-dyed-ombre-party-orange-white-shirt/p/itmc06c57ff02f7f?pid=SHTHPMR6Y7GYGGCV&lid=LSTSHTHPMR6Y7GYGGCVNWZIJI&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPMR6Y7GYGGCV.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e465]
+            - generic [ref=e467]:
+              - generic [ref=e468]: SH FSN
+              - link "Men Slim Fit Dyed/Ombre Spread Collar Party Shirt" [ref=e469] [cursor=pointer]:
+                - /url: /sh-fsn-men-dyed-ombre-party-orange-white-shirt/p/itmc06c57ff02f7f?pid=SHTHPMR6Y7GYGGCV&lid=LSTSHTHPMR6Y7GYGGCVNWZIJI&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPMR6Y7GYGGCV.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e471]
+              - link "₹389 ₹1,299 70% off" [ref=e472] [cursor=pointer]:
+                - /url: /sh-fsn-men-dyed-ombre-party-orange-white-shirt/p/itmc06c57ff02f7f?pid=SHTHPMR6Y7GYGGCV&lid=LSTSHTHPMR6Y7GYGGCVNWZIJI&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPMR6Y7GYGGCV.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e473]:
+                  - generic [ref=e474]: ₹389
+                  - generic [ref=e475]: ₹1,299
+                  - generic [ref=e476]: 70% off
+              - generic [ref=e479]: Only few left
+          - generic [ref=e481]:
+            - link [ref=e482] [cursor=pointer]:
+              - /url: /red-tape-men-striped-casual-multicolor-shirt/p/itmb882d2cdd588c?pid=SHTHNZTCVEPZQBKH&lid=LSTSHTHNZTCVEPZQBKH19IF6O&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHNZTCVEPZQBKH.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e489]
+            - generic [ref=e491]:
+              - generic [ref=e492]: RED TAPE
+              - link "Men Relaxed Fit Striped Button Down Collar Casual Shirt" [ref=e493] [cursor=pointer]:
+                - /url: /red-tape-men-striped-casual-multicolor-shirt/p/itmb882d2cdd588c?pid=SHTHNZTCVEPZQBKH&lid=LSTSHTHNZTCVEPZQBKH19IF6O&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHNZTCVEPZQBKH.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e495]
+              - link "₹741 ₹4,999 85% off" [ref=e496] [cursor=pointer]:
+                - /url: /red-tape-men-striped-casual-multicolor-shirt/p/itmb882d2cdd588c?pid=SHTHNZTCVEPZQBKH&lid=LSTSHTHNZTCVEPZQBKH19IF6O&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHNZTCVEPZQBKH.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e497]:
+                  - generic [ref=e498]: ₹741
+                  - generic [ref=e499]: ₹4,999
+                  - generic [ref=e500]: 85% off
+              - generic [ref=e503]: Hot Deal
+        - generic [ref=e505]:
+          - generic [ref=e507]:
+            - link [ref=e508] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-white-shirt/p/itmc81780e52759f?pid=SHTHHY3GWEJY7B8G&lid=LSTSHTHHY3GWEJY7B8GN0UJ8S&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHY3GWEJY7B8G.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e515]
+            - generic [ref=e517]:
+              - generic [ref=e518]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e519] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-white-shirt/p/itmc81780e52759f?pid=SHTHHY3GWEJY7B8G&lid=LSTSHTHHY3GWEJY7B8GN0UJ8S&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHY3GWEJY7B8G.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e521]
+              - link "₹295 ₹999 70% off" [ref=e522] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-white-shirt/p/itmc81780e52759f?pid=SHTHHY3GWEJY7B8G&lid=LSTSHTHHY3GWEJY7B8GN0UJ8S&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHY3GWEJY7B8G.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e523]:
+                  - generic [ref=e524]: ₹295
+                  - generic [ref=e525]: ₹999
+                  - generic [ref=e526]: 70% off
+              - generic [ref=e529]: Hot Deal
+          - generic [ref=e531]:
+            - link [ref=e532] [cursor=pointer]:
+              - /url: /yellowdash-men-striped-casual-blue-shirt/p/itm93b97e09fe70d?pid=SHTHKR7RKBNRZGMD&lid=LSTSHTHKR7RKBNRZGMDFFNMHD&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_BestsellerId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHKR7RKBNRZGMD.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e539]
+            - generic [ref=e541]:
+              - generic [ref=e542]: YELLOWDASH
+              - link "Men Regular Fit Striped Spread Collar Casual Shirt" [ref=e543] [cursor=pointer]:
+                - /url: /yellowdash-men-striped-casual-blue-shirt/p/itm93b97e09fe70d?pid=SHTHKR7RKBNRZGMD&lid=LSTSHTHKR7RKBNRZGMDFFNMHD&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_BestsellerId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHKR7RKBNRZGMD.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e545]
+              - link "₹227 ₹999 77% off" [ref=e546] [cursor=pointer]:
+                - /url: /yellowdash-men-striped-casual-blue-shirt/p/itm93b97e09fe70d?pid=SHTHKR7RKBNRZGMD&lid=LSTSHTHKR7RKBNRZGMDFFNMHD&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_BestsellerId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHKR7RKBNRZGMD.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e547]:
+                  - generic [ref=e548]: ₹227
+                  - generic [ref=e549]: ₹999
+                  - generic [ref=e550]: 77% off
+              - generic [ref=e553]: Value 365
+          - generic [ref=e555]:
+            - link [ref=e556] [cursor=pointer]:
+              - /url: /dimmy-men-solid-casual-orange-shirt/p/itm1a671e2d01fda?pid=SHTHH7P9BBRMZJNX&lid=LSTSHTHH7P9BBRMZJNXYWNFU9&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJCKjlgBzsphjHJsL_fpxyg2iETDMWfY0X4HOWrjCFdEdl1OFhqJW_80K7LSNcZdiRKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e563]
+            - generic [ref=e565]:
+              - img [ref=e567]
+              - generic [ref=e570]: DIMMY
+              - link "Men Regular Fit Solid Button Down Collar Casual Shirt" [ref=e571] [cursor=pointer]:
+                - /url: /dimmy-men-solid-casual-orange-shirt/p/itm1a671e2d01fda?pid=SHTHH7P9BBRMZJNX&lid=LSTSHTHH7P9BBRMZJNXYWNFU9&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJCKjlgBzsphjHJsL_fpxyg2iETDMWfY0X4HOWrjCFdEdl1OFhqJW_80K7LSNcZdiRKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹339 ₹1,999 83% off" [ref=e572] [cursor=pointer]:
+                - /url: /dimmy-men-solid-casual-orange-shirt/p/itm1a671e2d01fda?pid=SHTHH7P9BBRMZJNX&lid=LSTSHTHH7P9BBRMZJNXYWNFU9&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJCKjlgBzsphjHJsL_fpxyg2iETDMWfY0X4HOWrjCFdEdl1OFhqJW_80K7LSNcZdiRKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e573]:
+                  - generic [ref=e574]: ₹339
+                  - generic [ref=e575]: ₹1,999
+                  - generic [ref=e576]: 83% off
+              - generic [ref=e579]: Lowest price since launch
+          - generic [ref=e581]:
+            - link [ref=e582] [cursor=pointer]:
+              - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itme42a82fddd7b4?pid=SHTHYGJ4V5QCWFWU&lid=LSTSHTHYGJ4V5QCWFWUD16V4A&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIodtvF_2qEHAbL5su4V5zWf0u1zrGdrklzsvjUOibKP9lkJs6r27kCKhVOflJO4muhuXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e589]
+            - generic [ref=e591]:
+              - img [ref=e593]
+              - generic [ref=e596]: CAHOOT
+              - link "Men Regular Fit Checkered Spread Collar Casual Shirt" [ref=e597] [cursor=pointer]:
+                - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itme42a82fddd7b4?pid=SHTHYGJ4V5QCWFWU&lid=LSTSHTHYGJ4V5QCWFWUD16V4A&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIodtvF_2qEHAbL5su4V5zWf0u1zrGdrklzsvjUOibKP9lkJs6r27kCKhVOflJO4muhuXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e599]
+              - link "₹768 ₹1,899 59% off" [ref=e600] [cursor=pointer]:
+                - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itme42a82fddd7b4?pid=SHTHYGJ4V5QCWFWU&lid=LSTSHTHYGJ4V5QCWFWUD16V4A&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIodtvF_2qEHAbL5su4V5zWf0u1zrGdrklzsvjUOibKP9lkJs6r27kCKhVOflJO4muhuXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e601]:
+                  - generic [ref=e602]: ₹768
+                  - generic [ref=e603]: ₹1,899
+                  - generic [ref=e604]: 59% off
+        - generic [ref=e606]:
+          - generic [ref=e608]:
+            - link [ref=e609] [cursor=pointer]:
+              - /url: /metronaut-men-checkered-casual-beige-multicolor-shirt/p/itma542cf8f096fd?pid=SHTHZ4KVTXSJREZ6&lid=LSTSHTHZ4KVTXSJREZ62D8CAB&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZ4KVTXSJREZ6.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e616]
+            - generic [ref=e618]:
+              - generic [ref=e619]: METRONAUT
+              - link "Men Regular Fit Checkered Spread Collar Casual Shirt" [ref=e620] [cursor=pointer]:
+                - /url: /metronaut-men-checkered-casual-beige-multicolor-shirt/p/itma542cf8f096fd?pid=SHTHZ4KVTXSJREZ6&lid=LSTSHTHZ4KVTXSJREZ62D8CAB&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZ4KVTXSJREZ6.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e622]
+              - link "₹345 ₹1,799 80% off" [ref=e623] [cursor=pointer]:
+                - /url: /metronaut-men-checkered-casual-beige-multicolor-shirt/p/itma542cf8f096fd?pid=SHTHZ4KVTXSJREZ6&lid=LSTSHTHZ4KVTXSJREZ62D8CAB&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZ4KVTXSJREZ6.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e624]:
+                  - generic [ref=e625]: ₹345
+                  - generic [ref=e626]: ₹1,799
+                  - generic [ref=e627]: 80% off
+              - generic [ref=e630]: Hot Deal
+          - generic [ref=e632]:
+            - link [ref=e633] [cursor=pointer]:
+              - /url: /red-tape-men-striped-casual-grey-shirt/p/itmd542c04d2fca1?pid=SHTHZBGDNQY4S5TR&lid=LSTSHTHZBGDNQY4S5TRZWVLYA&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZBGDNQY4S5TR.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e640]
+            - generic [ref=e642]:
+              - generic [ref=e643]: RED TAPE
+              - link "Men Relaxed Fit Striped Button Down Collar Casual Shirt" [ref=e644] [cursor=pointer]:
+                - /url: /red-tape-men-striped-casual-grey-shirt/p/itmd542c04d2fca1?pid=SHTHZBGDNQY4S5TR&lid=LSTSHTHZBGDNQY4S5TRZWVLYA&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZBGDNQY4S5TR.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e646]
+              - link "₹764 ₹4,999 84% off" [ref=e647] [cursor=pointer]:
+                - /url: /red-tape-men-striped-casual-grey-shirt/p/itmd542c04d2fca1?pid=SHTHZBGDNQY4S5TR&lid=LSTSHTHZBGDNQY4S5TRZWVLYA&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZBGDNQY4S5TR.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e648]:
+                  - generic [ref=e649]: ₹764
+                  - generic [ref=e650]: ₹4,999
+                  - generic [ref=e651]: 84% off
+              - generic [ref=e654]: Only few left
+          - generic [ref=e656]:
+            - link [ref=e657] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-khaki-shirt/p/itm3cd62754785e6?pid=SHTHHN4CQSDX3VTF&lid=LSTSHTHHN4CQSDX3VTFUHXSWQ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHN4CQSDX3VTF.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e664]
+            - generic [ref=e666]:
+              - generic [ref=e667]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e668] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-khaki-shirt/p/itm3cd62754785e6?pid=SHTHHN4CQSDX3VTF&lid=LSTSHTHHN4CQSDX3VTFUHXSWQ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHN4CQSDX3VTF.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e670]
+              - link "₹295 ₹1,599 81% off" [ref=e671] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-khaki-shirt/p/itm3cd62754785e6?pid=SHTHHN4CQSDX3VTF&lid=LSTSHTHHN4CQSDX3VTFUHXSWQ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHN4CQSDX3VTF.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e672]:
+                  - generic [ref=e673]: ₹295
+                  - generic [ref=e674]: ₹1,599
+                  - generic [ref=e675]: 81% off
+              - generic [ref=e678]: Hot Deal
+          - generic [ref=e680]:
+            - link [ref=e681] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-pink-shirt/p/itm0fb320acdac50?pid=SHTHMYZXT79Z3M8S&lid=LSTSHTHMYZXT79Z3M8SXBIJ4D&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMYZXT79Z3M8S.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e688]
+            - generic [ref=e690]:
+              - generic [ref=e691]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e692] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-pink-shirt/p/itm0fb320acdac50?pid=SHTHMYZXT79Z3M8S&lid=LSTSHTHMYZXT79Z3M8SXBIJ4D&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMYZXT79Z3M8S.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e694]
+              - link "₹298 ₹1,499 80% off" [ref=e695] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-pink-shirt/p/itm0fb320acdac50?pid=SHTHMYZXT79Z3M8S&lid=LSTSHTHMYZXT79Z3M8SXBIJ4D&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMYZXT79Z3M8S.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e696]:
+                  - generic [ref=e697]: ₹298
+                  - generic [ref=e698]: ₹1,499
+                  - generic [ref=e699]: 80% off
+              - generic [ref=e702]: Hot Deal
+        - generic [ref=e704]:
+          - generic [ref=e706]:
+            - link [ref=e707] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-brown-shirt/p/itmebcc6776820e4?pid=SHTHMJQEHRCNZ7UE&lid=LSTSHTHMJQEHRCNZ7UEVQEYSV&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJLi1aHDJZYTRsRK90RhNMfer_4TwSdXbd8RDVfHM9Ro-G0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e714]
+            - generic [ref=e716]:
+              - img [ref=e718]
+              - generic [ref=e721]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e722] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-brown-shirt/p/itmebcc6776820e4?pid=SHTHMJQEHRCNZ7UE&lid=LSTSHTHMJQEHRCNZ7UEVQEYSV&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJLi1aHDJZYTRsRK90RhNMfer_4TwSdXbd8RDVfHM9Ro-G0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹263 ₹1,199 78% off" [ref=e723] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-brown-shirt/p/itmebcc6776820e4?pid=SHTHMJQEHRCNZ7UE&lid=LSTSHTHMJQEHRCNZ7UEVQEYSV&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJLi1aHDJZYTRsRK90RhNMfer_4TwSdXbd8RDVfHM9Ro-G0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e724]:
+                  - generic [ref=e725]: ₹263
+                  - generic [ref=e726]: ₹1,199
+                  - generic [ref=e727]: 78% off
+              - generic [ref=e730]: Hot Deal
+          - generic [ref=e732]:
+            - link [ref=e733] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-brown-shirt/p/itm37358507cfb13?pid=SHTHMJQFZAXEZGHU&lid=LSTSHTHMJQFZAXEZGHUDEVZKL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJSK9qGsWVwzm12-KJFB3RaZZpP5mb3jOA2YZZ4hhJU4eG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e740]
+            - generic [ref=e742]:
+              - img [ref=e744]
+              - generic [ref=e747]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e748] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-brown-shirt/p/itm37358507cfb13?pid=SHTHMJQFZAXEZGHU&lid=LSTSHTHMJQFZAXEZGHUDEVZKL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJSK9qGsWVwzm12-KJFB3RaZZpP5mb3jOA2YZZ4hhJU4eG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹263 ₹1,199 78% off" [ref=e749] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-brown-shirt/p/itm37358507cfb13?pid=SHTHMJQFZAXEZGHU&lid=LSTSHTHMJQFZAXEZGHUDEVZKL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJSK9qGsWVwzm12-KJFB3RaZZpP5mb3jOA2YZZ4hhJU4eG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e750]:
+                  - generic [ref=e751]: ₹263
+                  - generic [ref=e752]: ₹1,199
+                  - generic [ref=e753]: 78% off
+              - generic [ref=e756]: Hot Deal
+          - generic [ref=e758]:
+            - link [ref=e759] [cursor=pointer]:
+              - /url: /torontocn-men-solid-casual-brown-shirt/p/itma0f9d90d748c1?pid=SHTHZ4JSXNSRUWB8&lid=LSTSHTHZ4JSXNSRUWB8GP145D&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZ4JSXNSRUWB8.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e766]
+            - generic [ref=e768]:
+              - generic [ref=e769]: TorontoCN
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e770] [cursor=pointer]:
+                - /url: /torontocn-men-solid-casual-brown-shirt/p/itma0f9d90d748c1?pid=SHTHZ4JSXNSRUWB8&lid=LSTSHTHZ4JSXNSRUWB8GP145D&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZ4JSXNSRUWB8.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹369 ₹1,499 75% off" [ref=e771] [cursor=pointer]:
+                - /url: /torontocn-men-solid-casual-brown-shirt/p/itma0f9d90d748c1?pid=SHTHZ4JSXNSRUWB8&lid=LSTSHTHZ4JSXNSRUWB8GP145D&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZ4JSXNSRUWB8.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e772]:
+                  - generic [ref=e773]: ₹369
+                  - generic [ref=e774]: ₹1,499
+                  - generic [ref=e775]: 75% off
+              - generic [ref=e778]: Only few left
+          - generic [ref=e780]:
+            - link [ref=e781] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-green-shirt/p/itm502d23976135d?pid=SHTHMFY2KJ8A5WSK&lid=LSTSHTHMFY2KJ8A5WSKTLL5HH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMFY2KJ8A5WSK.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e788]
+            - generic [ref=e790]:
+              - generic [ref=e791]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e792] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-green-shirt/p/itm502d23976135d?pid=SHTHMFY2KJ8A5WSK&lid=LSTSHTHMFY2KJ8A5WSKTLL5HH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMFY2KJ8A5WSK.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e794]
+              - link "₹298 ₹1,499 80% off" [ref=e795] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-green-shirt/p/itm502d23976135d?pid=SHTHMFY2KJ8A5WSK&lid=LSTSHTHMFY2KJ8A5WSKTLL5HH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMFY2KJ8A5WSK.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e796]:
+                  - generic [ref=e797]: ₹298
+                  - generic [ref=e798]: ₹1,499
+                  - generic [ref=e799]: 80% off
+              - generic [ref=e802]: Hot Deal
+        - generic [ref=e804]:
+          - generic [ref=e806]:
+            - link [ref=e807] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-maroon-shirt/p/itm619f847e8ee71?pid=SHTHMJZQBUBSYC29&lid=LSTSHTHMJZQBUBSYC291DAYZL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESKYCDAnaRB87wHgt4Mw7_2cwpheAiG-zt2awgktV4xCXOG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e814]
+            - generic [ref=e816]:
+              - img [ref=e818]
+              - generic [ref=e821]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e822] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-maroon-shirt/p/itm619f847e8ee71?pid=SHTHMJZQBUBSYC29&lid=LSTSHTHMJZQBUBSYC291DAYZL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESKYCDAnaRB87wHgt4Mw7_2cwpheAiG-zt2awgktV4xCXOG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e824]
+              - link "₹263 ₹1,199 78% off" [ref=e825] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-maroon-shirt/p/itm619f847e8ee71?pid=SHTHMJZQBUBSYC29&lid=LSTSHTHMJZQBUBSYC291DAYZL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESKYCDAnaRB87wHgt4Mw7_2cwpheAiG-zt2awgktV4xCXOG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e826]:
+                  - generic [ref=e827]: ₹263
+                  - generic [ref=e828]: ₹1,199
+                  - generic [ref=e829]: 78% off
+              - generic [ref=e832]: Hot Deal
+          - generic [ref=e834]:
+            - link [ref=e835] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-black-shirt/p/itm1dea040f04654?pid=SHTHMJZVECPEVYVW&lid=LSTSHTHMJZVECPEVYVWMF1Q6S&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESKOhmEfnBQFklVAXC1r6xY5y2C_k16zXX0pNjr_7aFRrOG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e842]
+            - generic [ref=e844]:
+              - img [ref=e846]
+              - generic [ref=e849]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e850] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-black-shirt/p/itm1dea040f04654?pid=SHTHMJZVECPEVYVW&lid=LSTSHTHMJZVECPEVYVWMF1Q6S&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESKOhmEfnBQFklVAXC1r6xY5y2C_k16zXX0pNjr_7aFRrOG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹263 ₹1,199 78% off" [ref=e851] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-black-shirt/p/itm1dea040f04654?pid=SHTHMJZVECPEVYVW&lid=LSTSHTHMJZVECPEVYVWMF1Q6S&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESKOhmEfnBQFklVAXC1r6xY5y2C_k16zXX0pNjr_7aFRrOG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e852]:
+                  - generic [ref=e853]: ₹263
+                  - generic [ref=e854]: ₹1,199
+                  - generic [ref=e855]: 78% off
+              - generic [ref=e858]: Hot Deal
+          - generic [ref=e860]:
+            - link [ref=e861] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-purple-shirt/p/itmf6cfbdff41728?pid=SHTGXM2ZDZBUZYQM&lid=LSTSHTGXM2ZDZBUZYQMI3NFXI&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGXM2ZDZBUZYQM.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e868]
+            - generic [ref=e870]:
+              - generic [ref=e871]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e872] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itmf6cfbdff41728?pid=SHTGXM2ZDZBUZYQM&lid=LSTSHTGXM2ZDZBUZYQMI3NFXI&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGXM2ZDZBUZYQM.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e874]
+              - link "₹253 ₹1,999 87% off" [ref=e875] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itmf6cfbdff41728?pid=SHTGXM2ZDZBUZYQM&lid=LSTSHTGXM2ZDZBUZYQMI3NFXI&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGXM2ZDZBUZYQM.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e876]:
+                  - generic [ref=e877]: ₹253
+                  - generic [ref=e878]: ₹1,999
+                  - generic [ref=e879]: 87% off
+              - generic [ref=e882]: Hot Deal
+          - generic [ref=e884]:
+            - link [ref=e885] [cursor=pointer]:
+              - /url: /solbiza-men-checkered-casual-white-brown-shirt/p/itmb729f89e0ca7d?pid=SHTHZWFQY4YVGAQT&lid=LSTSHTHZWFQY4YVGAQTCF7PPS&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZWFQY4YVGAQT.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e892]
+            - generic [ref=e894]:
+              - generic [ref=e895]: Solbiza
+              - link "Men Regular Fit Checkered Spread Collar Casual Shirt" [ref=e896] [cursor=pointer]:
+                - /url: /solbiza-men-checkered-casual-white-brown-shirt/p/itmb729f89e0ca7d?pid=SHTHZWFQY4YVGAQT&lid=LSTSHTHZWFQY4YVGAQTCF7PPS&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZWFQY4YVGAQT.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹324 ₹1,299 75% off" [ref=e897] [cursor=pointer]:
+                - /url: /solbiza-men-checkered-casual-white-brown-shirt/p/itmb729f89e0ca7d?pid=SHTHZWFQY4YVGAQT&lid=LSTSHTHZWFQY4YVGAQTCF7PPS&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHZWFQY4YVGAQT.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e898]:
+                  - generic [ref=e899]: ₹324
+                  - generic [ref=e900]: ₹1,299
+                  - generic [ref=e901]: 75% off
+              - generic [ref=e904]: Only few left
+        - generic [ref=e906]:
+          - generic [ref=e908]:
+            - link [ref=e909] [cursor=pointer]:
+              - /url: /dimmy-men-solid-casual-light-blue-shirt/p/itm3413efa9bd613?pid=SHTHGJ3EDXPZJG3R&lid=LSTSHTHGJ3EDXPZJG3RHLZ5JR&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHGJ3EDXPZJG3R.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e916]
+            - generic [ref=e918]:
+              - generic [ref=e919]: DIMMY
+              - link "Men Regular Fit Solid Button Down Collar Casual Shirt" [ref=e920] [cursor=pointer]:
+                - /url: /dimmy-men-solid-casual-light-blue-shirt/p/itm3413efa9bd613?pid=SHTHGJ3EDXPZJG3R&lid=LSTSHTHGJ3EDXPZJG3RHLZ5JR&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHGJ3EDXPZJG3R.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e922]
+              - link "₹328 ₹1,499 78% off" [ref=e923] [cursor=pointer]:
+                - /url: /dimmy-men-solid-casual-light-blue-shirt/p/itm3413efa9bd613?pid=SHTHGJ3EDXPZJG3R&lid=LSTSHTHGJ3EDXPZJG3RHLZ5JR&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHGJ3EDXPZJG3R.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e924]:
+                  - generic [ref=e925]: ₹328
+                  - generic [ref=e926]: ₹1,499
+                  - generic [ref=e927]: 78% off
+              - generic [ref=e930]: Only few left
+          - generic [ref=e932]:
+            - link [ref=e933] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-white-shirt/p/itm2365556b65f44?pid=SHTHM6HNBXZCHCJF&lid=LSTSHTHM6HNBXZCHCJF0UZMBT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHM6HNBXZCHCJF.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e940]
+            - generic [ref=e942]:
+              - generic [ref=e943]: METRONAUT
+              - link "Men Slim Fit Solid Spread Collar Casual Shirt" [ref=e944] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-white-shirt/p/itm2365556b65f44?pid=SHTHM6HNBXZCHCJF&lid=LSTSHTHM6HNBXZCHCJF0UZMBT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHM6HNBXZCHCJF.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e946]
+              - link "₹269 ₹1,199 77% off" [ref=e947] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-white-shirt/p/itm2365556b65f44?pid=SHTHM6HNBXZCHCJF&lid=LSTSHTHM6HNBXZCHCJF0UZMBT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHM6HNBXZCHCJF.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e948]:
+                  - generic [ref=e949]: ₹269
+                  - generic [ref=e950]: ₹1,199
+                  - generic [ref=e951]: 77% off
+              - generic [ref=e954]: Lowest price since launch
+          - generic [ref=e956]:
+            - link [ref=e957] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-white-shirt/p/itm886f3265eae94?pid=SHTHMJPE5N5MGC3Y&lid=LSTSHTHMJPE5N5MGC3Y7LOFES&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJJFobmMx2PxxUnVp_I57vnsf_8iQAh76sS5r194ArhbuG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e964]
+            - generic [ref=e966]:
+              - img [ref=e968]
+              - generic [ref=e971]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e972] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-white-shirt/p/itm886f3265eae94?pid=SHTHMJPE5N5MGC3Y&lid=LSTSHTHMJPE5N5MGC3Y7LOFES&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJJFobmMx2PxxUnVp_I57vnsf_8iQAh76sS5r194ArhbuG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹263 ₹1,199 78% off" [ref=e973] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-white-shirt/p/itm886f3265eae94?pid=SHTHMJPE5N5MGC3Y&lid=LSTSHTHMJPE5N5MGC3Y7LOFES&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJJFobmMx2PxxUnVp_I57vnsf_8iQAh76sS5r194ArhbuG0kPR9Ul58OqssNsJtYt1KUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e974]:
+                  - generic [ref=e975]: ₹263
+                  - generic [ref=e976]: ₹1,199
+                  - generic [ref=e977]: 78% off
+              - generic [ref=e980]: Hot Deal
+          - generic [ref=e982]:
+            - link [ref=e983] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-light-blue-shirt/p/itm35e5979afe0ec?pid=SHTHMAPXFUEHCH4R&lid=LSTSHTHMAPXFUEHCH4R4N4HAP&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESI7-jtZPOPdru_sKSo3QcbZAp7FIB_MPyw_XSd2r1xqM48XxABFKxrUHdYHoqqxRAZKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e990]
+            - generic [ref=e992]:
+              - img [ref=e994]
+              - generic [ref=e997]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e998] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-light-blue-shirt/p/itm35e5979afe0ec?pid=SHTHMAPXFUEHCH4R&lid=LSTSHTHMAPXFUEHCH4R4N4HAP&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESI7-jtZPOPdru_sKSo3QcbZAp7FIB_MPyw_XSd2r1xqM48XxABFKxrUHdYHoqqxRAZKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹290 ₹999 70% off" [ref=e999] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-light-blue-shirt/p/itm35e5979afe0ec?pid=SHTHMAPXFUEHCH4R&lid=LSTSHTHMAPXFUEHCH4R4N4HAP&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESI7-jtZPOPdru_sKSo3QcbZAp7FIB_MPyw_XSd2r1xqM48XxABFKxrUHdYHoqqxRAZKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1000]:
+                  - generic [ref=e1001]: ₹290
+                  - generic [ref=e1002]: ₹999
+                  - generic [ref=e1003]: 70% off
+        - generic [ref=e1005]:
+          - generic [ref=e1007]:
+            - link [ref=e1008] [cursor=pointer]:
+              - /url: /metronaut-men-printed-casual-brown-shirt/p/itmd8f8b74843b28?pid=SHTHPHEM7EGAFBBK&lid=LSTSHTHPHEM7EGAFBBKL9HOP9&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPHEM7EGAFBBK.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1015]
+            - generic [ref=e1017]:
+              - generic [ref=e1018]: METRONAUT
+              - link "Men Regular Fit Printed Spread Collar Casual Shirt" [ref=e1019] [cursor=pointer]:
+                - /url: /metronaut-men-printed-casual-brown-shirt/p/itmd8f8b74843b28?pid=SHTHPHEM7EGAFBBK&lid=LSTSHTHPHEM7EGAFBBKL9HOP9&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPHEM7EGAFBBK.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1021]
+              - link "₹428 ₹1,663 74% off" [ref=e1022] [cursor=pointer]:
+                - /url: /metronaut-men-printed-casual-brown-shirt/p/itmd8f8b74843b28?pid=SHTHPHEM7EGAFBBK&lid=LSTSHTHPHEM7EGAFBBKL9HOP9&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPHEM7EGAFBBK.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1023]:
+                  - generic [ref=e1024]: ₹428
+                  - generic [ref=e1025]: ₹1,663
+                  - generic [ref=e1026]: 74% off
+              - generic [ref=e1029]: Only few left
+          - generic [ref=e1031]:
+            - link [ref=e1032] [cursor=pointer]:
+              - /url: /shirtzone-men-checkered-casual-light-blue-shirt/p/itm9bbfef3221a6a?pid=SHTHMKTGBPB7JX2G&lid=LSTSHTHMKTGBPB7JX2G7ZFSNS&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_FkPickId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMKTGBPB7JX2G.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1039]
+            - generic [ref=e1041]:
+              - generic [ref=e1042]: SHIRTZONE
+              - link "Men Slim Fit Checkered Spread Collar Casual Shirt" [ref=e1043] [cursor=pointer]:
+                - /url: /shirtzone-men-checkered-casual-light-blue-shirt/p/itm9bbfef3221a6a?pid=SHTHMKTGBPB7JX2G&lid=LSTSHTHMKTGBPB7JX2G7ZFSNS&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_FkPickId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMKTGBPB7JX2G.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1045]
+              - link "₹300 ₹1,999 84% off" [ref=e1046] [cursor=pointer]:
+                - /url: /shirtzone-men-checkered-casual-light-blue-shirt/p/itm9bbfef3221a6a?pid=SHTHMKTGBPB7JX2G&lid=LSTSHTHMKTGBPB7JX2G7ZFSNS&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_FkPickId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMKTGBPB7JX2G.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1047]:
+                  - generic [ref=e1048]: ₹300
+                  - generic [ref=e1049]: ₹1,999
+                  - generic [ref=e1050]: 84% off
+              - generic [ref=e1053]: Only few left
+          - generic [ref=e1055]:
+            - link [ref=e1056] [cursor=pointer]:
+              - /url: /avolt-men-solid-formal-dark-green-shirt/p/itm9ebdbd9806a8a?pid=SHTHY8H4RQ6NQ2HF&lid=LSTSHTHY8H4RQ6NQ2HF74KDMC&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESInznRe5VEF6v11n-i4hH2DePC5glvpbSnZgtGYqe07QEfKRUdVBUCaNd9AbN0dUYZKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1063]
+            - generic [ref=e1065]:
+              - img [ref=e1067]
+              - generic [ref=e1070]: AVOLT
+              - link "Men Regular Fit Solid Spread Collar Formal Shirt" [ref=e1071] [cursor=pointer]:
+                - /url: /avolt-men-solid-formal-dark-green-shirt/p/itm9ebdbd9806a8a?pid=SHTHY8H4RQ6NQ2HF&lid=LSTSHTHY8H4RQ6NQ2HF74KDMC&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESInznRe5VEF6v11n-i4hH2DePC5glvpbSnZgtGYqe07QEfKRUdVBUCaNd9AbN0dUYZKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1073]
+              - link "₹299 ₹999 70% off" [ref=e1074] [cursor=pointer]:
+                - /url: /avolt-men-solid-formal-dark-green-shirt/p/itm9ebdbd9806a8a?pid=SHTHY8H4RQ6NQ2HF&lid=LSTSHTHY8H4RQ6NQ2HF74KDMC&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESInznRe5VEF6v11n-i4hH2DePC5glvpbSnZgtGYqe07QEfKRUdVBUCaNd9AbN0dUYZKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1075]:
+                  - generic [ref=e1076]: ₹299
+                  - generic [ref=e1077]: ₹999
+                  - generic [ref=e1078]: 70% off
+              - generic [ref=e1081]: Hot Deal
+          - generic [ref=e1083]:
+            - link [ref=e1084] [cursor=pointer]:
+              - /url: /metronaut-men-solid-formal-maroon-shirt/p/itma8bb40886b514?pid=SHTH6RVXEJW8THPK&lid=LSTSHTH6RVXEJW8THPKOCKCU3&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESI5rdo0jgAzLocLINaxrPfo6wy3WZs0rI-Vm_5Jz7_NDD6t6pU9DJ8_JtAt_AebR0pKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1091]
+            - generic [ref=e1093]:
+              - img [ref=e1095]
+              - generic [ref=e1098]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Formal Shirt" [ref=e1099] [cursor=pointer]:
+                - /url: /metronaut-men-solid-formal-maroon-shirt/p/itma8bb40886b514?pid=SHTH6RVXEJW8THPK&lid=LSTSHTH6RVXEJW8THPKOCKCU3&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESI5rdo0jgAzLocLINaxrPfo6wy3WZs0rI-Vm_5Jz7_NDD6t6pU9DJ8_JtAt_AebR0pKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1101]
+              - link "₹259 ₹2,199 88% off" [ref=e1102] [cursor=pointer]:
+                - /url: /metronaut-men-solid-formal-maroon-shirt/p/itma8bb40886b514?pid=SHTH6RVXEJW8THPK&lid=LSTSHTH6RVXEJW8THPKOCKCU3&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESI5rdo0jgAzLocLINaxrPfo6wy3WZs0rI-Vm_5Jz7_NDD6t6pU9DJ8_JtAt_AebR0pKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1103]:
+                  - generic [ref=e1104]: ₹259
+                  - generic [ref=e1105]: ₹2,199
+                  - generic [ref=e1106]: 88% off
+        - generic [ref=e1108]:
+          - generic [ref=e1110]:
+            - link [ref=e1111] [cursor=pointer]:
+              - /url: /metronaut-men-checkered-casual-multicolor-shirt/p/itm1ba3d734d3aca?pid=SHTHHJ93DHMUGXAB&lid=LSTSHTHHJ93DHMUGXABO0BLUN&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_BestsellerId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHJ93DHMUGXAB.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1118]
+            - generic [ref=e1120]:
+              - generic [ref=e1121]: METRONAUT
+              - link "Men Regular Fit Checkered Spread Collar Casual Shirt" [ref=e1122] [cursor=pointer]:
+                - /url: /metronaut-men-checkered-casual-multicolor-shirt/p/itm1ba3d734d3aca?pid=SHTHHJ93DHMUGXAB&lid=LSTSHTHHJ93DHMUGXABO0BLUN&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_BestsellerId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHJ93DHMUGXAB.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1124]
+              - link "₹288 ₹1,799 83% off" [ref=e1125] [cursor=pointer]:
+                - /url: /metronaut-men-checkered-casual-multicolor-shirt/p/itm1ba3d734d3aca?pid=SHTHHJ93DHMUGXAB&lid=LSTSHTHHJ93DHMUGXABO0BLUN&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&spotlightTagId=default_BestsellerId_clo%2Fash%2Faxc%2Fmmk&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHHJ93DHMUGXAB.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1126]:
+                  - generic [ref=e1127]: ₹288
+                  - generic [ref=e1128]: ₹1,799
+                  - generic [ref=e1129]: 83% off
+              - generic [ref=e1132]: Only few left
+          - generic [ref=e1134]:
+            - link [ref=e1135] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-purple-shirt/p/itme4886b22f90d6?pid=SHTGZW8PKNGZ9KX4&lid=LSTSHTGZW8PKNGZ9KX4PAPUV4&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGZW8PKNGZ9KX4.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1142]
+            - generic [ref=e1144]:
+              - generic [ref=e1145]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e1146] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itme4886b22f90d6?pid=SHTGZW8PKNGZ9KX4&lid=LSTSHTGZW8PKNGZ9KX4PAPUV4&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGZW8PKNGZ9KX4.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1148]
+              - link "₹253 ₹1,999 87% off" [ref=e1149] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itme4886b22f90d6?pid=SHTGZW8PKNGZ9KX4&lid=LSTSHTGZW8PKNGZ9KX4PAPUV4&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGZW8PKNGZ9KX4.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1150]:
+                  - generic [ref=e1151]: ₹253
+                  - generic [ref=e1152]: ₹1,999
+                  - generic [ref=e1153]: 87% off
+              - generic [ref=e1156]: Hot Deal
+          - generic [ref=e1158]:
+            - link [ref=e1159] [cursor=pointer]:
+              - /url: /adi-fashion-men-solid-formal-green-shirt/p/itm4deceb3cd6c36?pid=SHTHPMZWXYAJJNHN&lid=LSTSHTHPMZWXYAJJNHNNARA45&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPMZWXYAJJNHN.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1166]
+            - generic [ref=e1168]:
+              - generic [ref=e1169]: Adi fashion
+              - link "Men Regular Fit Solid Spread Collar Formal Shirt" [ref=e1170] [cursor=pointer]:
+                - /url: /adi-fashion-men-solid-formal-green-shirt/p/itm4deceb3cd6c36?pid=SHTHPMZWXYAJJNHN&lid=LSTSHTHPMZWXYAJJNHNNARA45&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPMZWXYAJJNHN.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹223 ₹999 77% off" [ref=e1171] [cursor=pointer]:
+                - /url: /adi-fashion-men-solid-formal-green-shirt/p/itm4deceb3cd6c36?pid=SHTHPMZWXYAJJNHN&lid=LSTSHTHPMZWXYAJJNHNNARA45&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHPMZWXYAJJNHN.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1172]:
+                  - generic [ref=e1173]: ₹223
+                  - generic [ref=e1174]: ₹999
+                  - generic [ref=e1175]: 77% off
+              - generic [ref=e1178]: Only few left
+          - generic [ref=e1180]:
+            - link [ref=e1181] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-dark-green-shirt/p/itm27b1951c2811e?pid=SHTGTCJQGSTR5XDQ&lid=LSTSHTGTCJQGSTR5XDQRZC9FQ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGTCJQGSTR5XDQ.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1188]
+            - generic [ref=e1190]:
+              - generic [ref=e1191]: METRONAUT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e1192] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-dark-green-shirt/p/itm27b1951c2811e?pid=SHTGTCJQGSTR5XDQ&lid=LSTSHTGTCJQGSTR5XDQRZC9FQ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGTCJQGSTR5XDQ.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1194]
+              - link "₹253 ₹1,999 87% off" [ref=e1195] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-dark-green-shirt/p/itm27b1951c2811e?pid=SHTGTCJQGSTR5XDQ&lid=LSTSHTGTCJQGSTR5XDQRZC9FQ&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTGTCJQGSTR5XDQ.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1196]:
+                  - generic [ref=e1197]: ₹253
+                  - generic [ref=e1198]: ₹1,999
+                  - generic [ref=e1199]: 87% off
+              - generic [ref=e1202]: Hot Deal
+        - generic [ref=e1204]:
+          - generic [ref=e1206]:
+            - link [ref=e1207] [cursor=pointer]:
+              - /url: /cahoot-men-solid-casual-blue-shirt/p/itm030eb292b0d32?pid=SHTGNZAXNYBNVPGG&lid=LSTSHTGNZAXNYBNVPGGXOTW83&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIeKiw-sP6ez1sQdO6Pgn3Tnul4v2D0Bif7SVP4G9A1DEv6x3zkE9yp6qdhlQ9m_5GhuXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1214]
+            - generic [ref=e1216]:
+              - img [ref=e1218]
+              - generic [ref=e1221]: CAHOOT
+              - link "Men Regular Fit Solid Spread Collar Casual Shirt" [ref=e1222] [cursor=pointer]:
+                - /url: /cahoot-men-solid-casual-blue-shirt/p/itm030eb292b0d32?pid=SHTGNZAXNYBNVPGG&lid=LSTSHTGNZAXNYBNVPGGXOTW83&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIeKiw-sP6ez1sQdO6Pgn3Tnul4v2D0Bif7SVP4G9A1DEv6x3zkE9yp6qdhlQ9m_5GhuXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹647 ₹1,499 56% off" [ref=e1223] [cursor=pointer]:
+                - /url: /cahoot-men-solid-casual-blue-shirt/p/itm030eb292b0d32?pid=SHTGNZAXNYBNVPGG&lid=LSTSHTGNZAXNYBNVPGGXOTW83&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESIeKiw-sP6ez1sQdO6Pgn3Tnul4v2D0Bif7SVP4G9A1DEv6x3zkE9yp6qdhlQ9m_5GhuXAyRvsQ0cNU7EZn15oN&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1224]:
+                  - generic [ref=e1225]: ₹647
+                  - generic [ref=e1226]: ₹1,499
+                  - generic [ref=e1227]: 56% off
+          - generic [ref=e1229]:
+            - link [ref=e1230] [cursor=pointer]:
+              - /url: /dimmy-men-solid-casual-grey-shirt/p/itm01527e481c40a?pid=SHTHDDRTMMSURHSC&lid=LSTSHTHDDRTMMSURHSCIHJFXT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJHV5knIzXIZr8695-osm5ggZS7xnaygJ34pSe0crar3PDbGTl_XfNtj5JjKpBXsBBKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1237]
+            - generic [ref=e1239]:
+              - img [ref=e1241]
+              - generic [ref=e1244]: DIMMY
+              - link "Men Regular Fit Solid Button Down Collar Casual Shirt" [ref=e1245] [cursor=pointer]:
+                - /url: /dimmy-men-solid-casual-grey-shirt/p/itm01527e481c40a?pid=SHTHDDRTMMSURHSC&lid=LSTSHTHDDRTMMSURHSCIHJFXT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJHV5knIzXIZr8695-osm5ggZS7xnaygJ34pSe0crar3PDbGTl_XfNtj5JjKpBXsBBKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹345 ₹1,999 82% off" [ref=e1246] [cursor=pointer]:
+                - /url: /dimmy-men-solid-casual-grey-shirt/p/itm01527e481c40a?pid=SHTHDDRTMMSURHSC&lid=LSTSHTHDDRTMMSURHSCIHJFXT&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_HHLQb8vpe9oo5h6tra_3LcEK491_sxZ2sIwPXFF1ESJHV5knIzXIZr8695-osm5ggZS7xnaygJ34pSe0crar3PDbGTl_XfNtj5JjKpBXsBBKUWeEKxrkPUxNM2VwAics&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1247]:
+                  - generic [ref=e1248]: ₹345
+                  - generic [ref=e1249]: ₹1,999
+                  - generic [ref=e1250]: 82% off
+          - generic [ref=e1252]:
+            - link [ref=e1253] [cursor=pointer]:
+              - /url: /yellowdash-men-checkered-casual-pink-shirt/p/itm9930ff3cae4ec?pid=SHTHNN6ZSJGGXTXQ&lid=LSTSHTHNN6ZSJGGXTXQNZVJSL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHNN6ZSJGGXTXQ.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1260]
+            - generic [ref=e1262]:
+              - generic [ref=e1263]: YELLOWDASH
+              - link "Men Regular Fit Checkered Spread Collar Casual Shirt" [ref=e1264] [cursor=pointer]:
+                - /url: /yellowdash-men-checkered-casual-pink-shirt/p/itm9930ff3cae4ec?pid=SHTHNN6ZSJGGXTXQ&lid=LSTSHTHNN6ZSJGGXTXQNZVJSL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHNN6ZSJGGXTXQ.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - link "₹227 ₹999 77% off" [ref=e1265] [cursor=pointer]:
+                - /url: /yellowdash-men-checkered-casual-pink-shirt/p/itm9930ff3cae4ec?pid=SHTHNN6ZSJGGXTXQ&lid=LSTSHTHNN6ZSJGGXTXQNZVJSL&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHNN6ZSJGGXTXQ.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1266]:
+                  - generic [ref=e1267]: ₹227
+                  - generic [ref=e1268]: ₹999
+                  - generic [ref=e1269]: 77% off
+              - generic [ref=e1272]: Value 365
+          - generic [ref=e1274]:
+            - link [ref=e1275] [cursor=pointer]:
+              - /url: /metronaut-men-solid-casual-purple-shirt/p/itm76abeb34258cb?pid=SHTHMJZTD2PU8VVR&lid=LSTSHTHMJZTD2PU8VVRAJODVH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMJZTD2PU8VVR.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1282]
+            - generic [ref=e1284]:
+              - generic [ref=e1285]: METRONAUT
+              - link "Men Regular Fit Solid Casual Shirt" [ref=e1286] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itm76abeb34258cb?pid=SHTHMJZTD2PU8VVR&lid=LSTSHTHMJZTD2PU8VVRAJODVH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMJZTD2PU8VVR.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+              - img [ref=e1288]
+              - link "₹263 ₹1,199 78% off" [ref=e1289] [cursor=pointer]:
+                - /url: /metronaut-men-solid-casual-purple-shirt/p/itm76abeb34258cb?pid=SHTHMJZTD2PU8VVR&lid=LSTSHTHMJZTD2PU8VVRAJODVH&marketplace=FLIPKART&q=mens+shirts&store=clo%2Fash%2Faxc%2Fmmk&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=c103d105-f83d-493f-80d8-4d5ef9da38a3.SHTHMJZTD2PU8VVR.SEARCH&ppt=None&ppn=None&ssid=qw7gup018w0000001786011952349&qH=101e209a16ec881b&ov_redirect=true
+                - generic [ref=e1290]:
+                  - generic [ref=e1291]: ₹263
+                  - generic [ref=e1292]: ₹1,199
+                  - generic [ref=e1293]: 78% off
+              - generic [ref=e1296]: Hot Deal
+        - generic [ref=e1299]:
+          - generic [ref=e1300]: Page 1 of 529
+          - navigation [ref=e1301]:
+            - link "1" [ref=e1302] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+            - link "2" [ref=e1303] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+            - link "3" [ref=e1304] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=3
+            - link "4" [ref=e1305] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=4
+            - link "5" [ref=e1306] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=5
+            - link "6" [ref=e1307] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=6
+            - link "7" [ref=e1308] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=7
+            - link "8" [ref=e1309] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=8
+            - link "9" [ref=e1310] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=9
+            - link "10" [ref=e1311] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=10
+            - link "Next" [ref=e1312] [cursor=pointer]:
+              - /url: /search?q=mens+shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+        - generic [ref=e1314]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1315]:
+            - generic [ref=e1316] [cursor=pointer]: "Yes"
+            - generic [ref=e1317] [cursor=pointer]: "No"
+    - generic [ref=e1319]:
+      - generic [ref=e1320]: Reviews for Popular Men's Shirts
+      - generic [ref=e1321]:
+        - generic [ref=e1322]:
+          - generic [ref=e1324]:
+            - img "METRONAUT Men Solid Formal Maroon Shirt"
+          - generic [ref=e1325]:
+            - link "1. METRONAUT Men Solid Formal ... 4 7,055 Ratings&331 Reviews ₹259 88% off" [ref=e1326] [cursor=pointer]:
+              - /url: /metronaut-men-solid-formal-maroon-shirt/p/itma8bb40886b514?pid=SHTH6RVXEJW8THPK&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1328]: 1. METRONAUT Men Solid Formal ...
+              - generic [ref=e1329]:
+                - generic [ref=e1330]:
+                  - text: "4"
+                  - img [ref=e1331]
+                - generic [ref=e1332]:
+                  - text: 7,055 Ratings
+                  - generic [ref=e1333]: "&331 Reviews"
+              - generic [ref=e1335]:
+                - generic [ref=e1336]: ₹259
+                - generic [ref=e1337]: 88% off
+            - list [ref=e1338]:
+              - listitem [ref=e1339]: Fabric:Satin
+              - listitem [ref=e1340]: Satin
+              - listitem [ref=e1341]: RegularFit, Full Sleeve
+        - generic [ref=e1342]:
+          - generic [ref=e1343]: Most Helpful Review
+          - generic [ref=e1345]:
+            - generic [ref=e1346]:
+              - generic [ref=e1347]:
+                - text: "5"
+                - img [ref=e1348]
+              - paragraph [ref=e1349]: Must buy!
+            - generic [ref=e1353]: Quality is good. Cheap and best. jai flipkart
+            - generic [ref=e1355]:
+              - paragraph [ref=e1356]: shankar N
+              - img [ref=e1357]
+              - paragraph [ref=e1361]: Certified Buyer
+              - paragraph [ref=e1362]: Jan, 2025
+        - generic [ref=e1363]:
+          - generic [ref=e1364]: Recent Review
+          - generic [ref=e1366]:
+            - generic [ref=e1367]:
+              - generic [ref=e1368]:
+                - text: "1"
+                - img [ref=e1369]
+              - paragraph [ref=e1370]: Unsatisfactory
+            - generic [ref=e1374]:
+              - text: Werry Poor stitching
+              - text: To bad
+            - generic [ref=e1376]:
+              - paragraph [ref=e1377]: Subbanna.g Subbanna.g
+              - img [ref=e1378]
+              - paragraph [ref=e1382]: Certified Buyer
+              - paragraph [ref=e1383]: 16 days ago
+      - generic [ref=e1384]:
+        - generic [ref=e1385]:
+          - generic [ref=e1387]:
+            - img "AVOLT Men Solid Formal Dark Green Shirt"
+          - generic [ref=e1388]:
+            - link "2. AVOLT Men Solid Formal Dark... 3.9 1,362 Ratings&84 Reviews ₹299 70% off" [ref=e1389] [cursor=pointer]:
+              - /url: /avolt-men-solid-formal-dark-green-shirt/p/itm9ebdbd9806a8a?pid=SHTHY8H4RQ6NQ2HF&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1391]: 2. AVOLT Men Solid Formal Dark...
+              - generic [ref=e1392]:
+                - generic [ref=e1393]:
+                  - text: "3.9"
+                  - img [ref=e1394]
+                - generic [ref=e1395]:
+                  - text: 1,362 Ratings
+                  - generic [ref=e1396]: "&84 Reviews"
+              - generic [ref=e1398]:
+                - generic [ref=e1399]: ₹299
+                - generic [ref=e1400]: 70% off
+            - list [ref=e1401]:
+              - listitem [ref=e1402]: Fabric:Cotton Blend
+              - listitem [ref=e1403]: RegularFit, Full Sleeve
+              - listitem [ref=e1404]: CollarType:Spread
+        - generic [ref=e1405]:
+          - generic [ref=e1406]: Most Helpful Review
+          - generic [ref=e1408]:
+            - generic [ref=e1409]:
+              - generic [ref=e1410]:
+                - text: "5"
+                - img [ref=e1411]
+              - paragraph [ref=e1412]: Excellent
+            - generic [ref=e1416]:
+              - text: Worth for the Money,
+              - text: Great Quality,
+              - text: Must buy👌,
+              - text: Genuine Product.
+            - generic [ref=e1418]:
+              - paragraph [ref=e1419]: Md Asif Parwez
+              - img [ref=e1420]
+              - paragraph [ref=e1424]: Certified Buyer
+              - paragraph [ref=e1425]: Feb, 2024
+        - generic [ref=e1426]:
+          - generic [ref=e1427]: Recent Review
+          - generic [ref=e1429]:
+            - generic [ref=e1430]:
+              - generic [ref=e1431]:
+                - text: "5"
+                - img [ref=e1432]
+              - paragraph [ref=e1433]: Terrific purchase
+            - generic [ref=e1437]: Good product.. Thank you flipkart
+            - generic [ref=e1439]:
+              - paragraph [ref=e1440]: Flipkart Customer
+              - img [ref=e1441]
+              - paragraph [ref=e1445]: Certified Buyer
+              - paragraph [ref=e1446]: 5 days ago
+      - generic [ref=e1447]:
+        - generic [ref=e1448]:
+          - generic [ref=e1450]:
+            - img "Eddicted Graphic Print Men Round Neck Maroon T-Shirt"
+          - generic [ref=e1451]:
+            - link "3. Eddicted Graphic Print Men ... 4 960 Ratings&88 Reviews ₹350 64% off" [ref=e1452] [cursor=pointer]:
+              - /url: /eddicted-graphic-print-men-round-neck-maroon-t-shirt/p/itm6a17c1d796639?pid=TSHHHYGSZQJ6HEWG&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1454]: 3. Eddicted Graphic Print Men ...
+              - generic [ref=e1455]:
+                - generic [ref=e1456]:
+                  - text: "4"
+                  - img [ref=e1457]
+                - generic [ref=e1458]:
+                  - text: 960 Ratings
+                  - generic [ref=e1459]: "&88 Reviews"
+              - generic [ref=e1461]:
+                - generic [ref=e1462]: ₹350
+                - generic [ref=e1463]: 64% off
+            - list [ref=e1464]:
+              - listitem [ref=e1465]: Fabric:Cotton Blend
+              - listitem [ref=e1466]: Comfort FitFit Round NeckT-shirt
+              - listitem [ref=e1467]: Pattern:Graphic Print
+        - generic [ref=e1468]:
+          - generic [ref=e1469]: Most Helpful Review
+          - generic [ref=e1471]:
+            - generic [ref=e1472]:
+              - generic [ref=e1473]:
+                - text: "5"
+                - img [ref=e1474]
+              - paragraph [ref=e1475]: Just wow!
+            - generic [ref=e1479]: Product is very good it just looking sani as it is in the picture
+            - generic [ref=e1481]:
+              - paragraph [ref=e1482]: Flipkart Customer
+              - img [ref=e1483]
+              - paragraph [ref=e1487]: Certified Buyer
+              - paragraph [ref=e1488]: 3 months ago
+        - generic [ref=e1489]:
+          - generic [ref=e1490]: Recent Review
+          - generic [ref=e1492]:
+            - generic [ref=e1493]:
+              - generic [ref=e1494]:
+                - text: "5"
+                - img [ref=e1495]
+              - paragraph [ref=e1496]: Worth every penny
+            - generic [ref=e1500]: It's really good and worth the price.
+            - generic [ref=e1502]:
+              - paragraph
+              - img [ref=e1503]
+              - paragraph [ref=e1507]: Certified Buyer
+              - paragraph [ref=e1508]: 2 days ago
+      - generic [ref=e1509]:
+        - generic [ref=e1510]:
+          - generic [ref=e1512]:
+            - img "CAHOOT Men Checkered Casual Black Shirt"
+          - generic [ref=e1513]:
+            - link "4. CAHOOT Men Checkered Casual... 3.8 268 Ratings&19 Reviews ₹719 55% off" [ref=e1514] [cursor=pointer]:
+              - /url: /cahoot-men-checkered-casual-black-shirt/p/itmbe45af2a8deb4?pid=SHTGN4DHFGZVHCH7&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1516]: 4. CAHOOT Men Checkered Casual...
+              - generic [ref=e1517]:
+                - generic [ref=e1518]:
+                  - text: "3.8"
+                  - img [ref=e1519]
+                - generic [ref=e1520]:
+                  - text: 268 Ratings
+                  - generic [ref=e1521]: "&19 Reviews"
+              - generic [ref=e1523]:
+                - generic [ref=e1524]: ₹719
+                - generic [ref=e1525]: 55% off
+            - list [ref=e1526]:
+              - listitem [ref=e1527]: Fabric:Cotton Blend
+              - listitem [ref=e1528]: RegularFit, Full Sleeve
+              - listitem [ref=e1529]: Pattern:Checkered
+        - generic [ref=e1530]:
+          - generic [ref=e1531]: Most Helpful Review
+          - generic [ref=e1533]:
+            - generic [ref=e1534]:
+              - generic [ref=e1535]:
+                - text: "1"
+                - img [ref=e1536]
+              - paragraph [ref=e1537]: Worthless
+            - generic [ref=e1541]: First wash cloth leave colour to much like hair blich so sab so I give 1 ⭐
+            - generic [ref=e1543]:
+              - paragraph [ref=e1544]: Er. Kamlesh
+              - img [ref=e1545]
+              - paragraph [ref=e1549]: Certified Buyer
+              - paragraph [ref=e1550]: 22 days ago
+        - generic [ref=e1551]:
+          - generic [ref=e1552]: Recent Review
+          - generic [ref=e1554]:
+            - generic [ref=e1555]:
+              - generic [ref=e1556]:
+                - text: "1"
+                - img [ref=e1557]
+              - paragraph [ref=e1558]: Worthless
+            - generic [ref=e1562]: First wash cloth leave colour to much like hair blich so sab so I give 1 ⭐
+            - generic [ref=e1564]:
+              - paragraph [ref=e1565]: Er. Kamlesh
+              - img [ref=e1566]
+              - paragraph [ref=e1570]: Certified Buyer
+              - paragraph [ref=e1571]: 22 days ago
+      - generic [ref=e1572]:
+        - generic [ref=e1573]:
+          - generic [ref=e1575]:
+            - img "CAHOOT Men Checkered Casual Multicolor Shirt"
+          - generic [ref=e1576]:
+            - link "5. CAHOOT Men Checkered Casual... 4 845 Ratings&41 Reviews ₹768 59% off" [ref=e1577] [cursor=pointer]:
+              - /url: /cahoot-men-checkered-casual-multicolor-shirt/p/itme42a82fddd7b4?pid=SHTHYGJ4V5QCWFWU&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1579]: 5. CAHOOT Men Checkered Casual...
+              - generic [ref=e1580]:
+                - generic [ref=e1581]:
+                  - text: "4"
+                  - img [ref=e1582]
+                - generic [ref=e1583]:
+                  - text: 845 Ratings
+                  - generic [ref=e1584]: "&41 Reviews"
+              - generic [ref=e1586]:
+                - generic [ref=e1587]: ₹768
+                - generic [ref=e1588]: 59% off
+            - list [ref=e1589]:
+              - listitem [ref=e1590]: Fabric:Pure Cotton
+              - listitem [ref=e1591]: RegularFit, Full Sleeve
+              - listitem [ref=e1592]: CollarType:Spread
+        - generic [ref=e1593]:
+          - generic [ref=e1594]: Most Helpful Review
+          - generic [ref=e1596]:
+            - generic [ref=e1597]:
+              - generic [ref=e1598]:
+                - text: "3"
+                - img [ref=e1599]
+              - paragraph [ref=e1600]: Nice
+            - generic [ref=e1604]: The fabric is good but colour is like faded
+            - generic [ref=e1606]:
+              - paragraph [ref=e1607]: Manish Kalindi
+              - img [ref=e1608]
+              - paragraph [ref=e1612]: Certified Buyer
+              - paragraph [ref=e1613]: 10 months ago
+        - generic [ref=e1614]:
+          - generic [ref=e1615]: Recent Review
+          - generic [ref=e1617]:
+            - generic [ref=e1618]:
+              - generic [ref=e1619]:
+                - text: "5"
+                - img [ref=e1620]
+              - paragraph [ref=e1621]: Super!
+            - generic [ref=e1625]:
+              - text: Simple, clean, and easy to style 🤍
+              - text: The white checked shirt gives a classy casual look and feels super comfortable to wear
+            - generic [ref=e1627]:
+              - paragraph [ref=e1628]: Krishna Kumawat
+              - img [ref=e1629]
+              - paragraph [ref=e1633]: Certified Buyer
+              - paragraph [ref=e1634]: 2 months ago
+  - contentinfo [ref=e1635]:
+    - generic [ref=e1637]:
+      - generic [ref=e1638]:
+        - generic [ref=e1639]:
+          - generic [ref=e1640]: ABOUT
+          - link "Contact Us" [ref=e1641] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1642] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1643] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1644] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1645] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1646] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1647]:
+          - generic [ref=e1648]: GROUP COMPANIES
+          - link "Myntra" [ref=e1649] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1650] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1651] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1652]:
+          - generic [ref=e1653]: HELP
+          - link "Payments" [ref=e1654] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1655] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1656] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1657] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1658]:
+          - generic [ref=e1659]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1660] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1661] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1662] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1663] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1664] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1665] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1666] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1667] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1669]:
+          - generic [ref=e1670]: "Mail Us:"
+          - generic [ref=e1673]:
+            - paragraph [ref=e1674]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1675]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1676]: Clove Embassy Tech Village,
+            - paragraph [ref=e1677]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1678]: Bengaluru, 560103,
+            - paragraph [ref=e1679]: Karnataka, India
+          - generic [ref=e1680]: Social
+          - generic [ref=e1681]:
+            - link [ref=e1683] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1684]
+            - link [ref=e1686] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1687]
+            - link [ref=e1689] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1690]
+            - link [ref=e1692] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1693]
+        - generic [ref=e1695]:
+          - generic [ref=e1696]: "Registered Office Address:"
+          - generic [ref=e1699]:
+            - paragraph [ref=e1700]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1701]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1702]: Clove Embassy Tech Village,
+            - paragraph [ref=e1703]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1704]: Bengaluru, 560103,
+            - paragraph [ref=e1705]: Karnataka, India
+            - paragraph [ref=e1706]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1707]:
+              - text: "Telephone:"
+              - link "044-45614709" [ref=e1708] [cursor=pointer]:
+                - /url: tel:044-45614709
+              - text: /
+              - link "044-45714709" [ref=e1709] [cursor=pointer]:
+                - /url: tel:044-45714709
+      - generic [ref=e1711]:
+        - generic [ref=e1712]:
+          - img [ref=e1713]
+          - link "Become a Seller" [ref=e1714] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1715]:
+          - img [ref=e1716]
+          - text: Advertise
+        - generic [ref=e1717]:
+          - img [ref=e1718]
+          - link "Gift Cards" [ref=e1719] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1720]:
+          - img [ref=e1721]
+          - link "Help Center" [ref=e1722] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1723]: © 2007-2026 Flipkart.com
+        - img [ref=e1724]
+```
+
+# Test source
+
+```ts
+  1  | import { test } from '@playwright/test';
+  2  | 
+  3  | test.setTimeout(120000);
+  4  | 
+  5  | test('flipcart_products', async ({ page }) => {
+  6  |   await page.goto('https://www.flipkart.com/', { waitUntil: 'domcontentloaded' });
+  7  | 
+  8  |   const closePopup = page.locator('button._2KpZ6l._2doB4z');
+  9  |   if (await closePopup.count() > 0) {
+  10 |     await closePopup.first().click();
+  11 |   }
+  12 | 
+  13 |   // Use a strict role-based locator to avoid strict-mode violations
+  14 |   const searchBox = page.getByRole('textbox', { name: 'Search for Products, Brands and More' });
+  15 |   await searchBox.waitFor({ state: 'visible', timeout: 30000 });
+  16 |   await searchBox.fill('mens shirts');
+  17 | 
+  18 |   // Click the search button to reliably trigger the search
+  19 |   const searchButton = page.getByRole('button', { name: 'Search for Products, Brands and More' });
+  20 |   if (await searchButton.count() > 0) {
+  21 |     await Promise.all([
+  22 |       page.waitForNavigation({ waitUntil: 'networkidle', timeout: 90000 }),
+  23 |       searchButton.first().click(),
+  24 |     ]);
+  25 |   } else {
+  26 |     await Promise.all([
+  27 |       page.waitForNavigation({ waitUntil: 'networkidle', timeout: 90000 }),
+  28 |       searchBox.press('Enter'),
+  29 |     ]);
+  30 |   }
+  31 | 
+  32 |   // Wait for any price text (₹) or common price selectors as a fallback
+  33 |   try {
+  34 |     await page.waitForSelector("xpath=//*[contains(text(),'₹') or contains(text(), 'Rs')]", { timeout: 90000 });
+  35 |   } catch (e) {
+> 36 |     await page.waitForSelector('div._30jeq3, div._1vC4OE, span._2UzuFa', { timeout: 90000 });
+     |                ^ Error: page.waitForSelector: Test timeout of 120000ms exceeded.
+  37 |   }
+  38 | 
+  39 |   const titles = page.locator('div._4rR01T, a.s1Q9rs, div._2WkVRV');
+  40 |   let prices = page.locator('div._30jeq3, div._1vC4OE');
+  41 | 
+  42 |   // Fallback: if standard price locators are empty, pick any element containing ₹
+  43 |   if ((await prices.count()) === 0) {
+  44 |     prices = page.locator("xpath=//*[contains(text(),'₹') or contains(text(), 'Rs')]");
+  45 |   }
+  46 | 
+  47 |   const productCount = Math.min(await titles.count(), await prices.count());
+  48 |   console.log('Total products count:', productCount);
+  49 | 
+  50 |   const below500 = [];
+  51 |   const above500 = [];
+  52 | 
+  53 |   for (let i = 0; i < productCount; i++) {
+  54 |     const title = (await titles.nth(i).textContent())?.trim() ?? 'Unknown title';
+  55 |     const priceText = (await prices.nth(i).textContent())?.trim() ?? '';
+  56 |     const numericPrice = parseInt(priceText.replace(/[^0-9]/g, ''), 10);
+  57 | 
+  58 |     if (Number.isNaN(numericPrice)) {
+  59 |       console.log(`Unable to parse price for product: ${title} (${priceText})`);
+  60 |       continue;
+  61 |     }
+  62 | 
+  63 |     const product = { title, priceText, price: numericPrice };
+  64 |     if (product.price <= 500) {
+  65 |       below500.push(product);
+  66 |     } else {
+  67 |       above500.push(product);
+  68 |     }
+  69 |   }
+  70 | 
+  71 |   console.log('Products priced at or below ₹500:');
+  72 |   below500.forEach((product) => console.log(`- ${product.title} | ${product.priceText}`));
+  73 | 
+  74 |   console.log('Products priced above ₹500:');
+  75 |   above500.forEach((product) => console.log(`- ${product.title} | ${product.priceText}`));
+  76 | });
+```

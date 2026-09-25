@@ -1,0 +1,1172 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: myntra_task.spec.js >> titles
+- Location: tests\myntra_task.spec.js:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - text: "| | |"
+    - generic:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "Men" [ref=e10] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=e13] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=e16] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=e19] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=e22] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=e25] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - generic [ref=e27]:
+            - link "Studio" [ref=e28] [cursor=pointer]:
+              - /url: /studio/home
+            - superscript [ref=e30]: new
+      - generic [ref=e31]:
+        - generic [ref=e35]: Profile
+        - link "Wishlist":
+          - /url: /wishlist
+          - generic [ref=e37] [cursor=pointer]: Wishlist
+        - link "Bag":
+          - /url: /checkout/cart
+          - generic [ref=e39] [cursor=pointer]: Bag
+      - textbox "Search for products, brands and more" [ref=e41]
+  - generic [ref=e45]:
+    - main [ref=e46]:
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - link "Home" [ref=e51] [cursor=pointer]:
+            - /url: /?src=bc
+          - text: /
+        - listitem [ref=e52]:
+          - link "Clothing" [ref=e53] [cursor=pointer]:
+            - /url: /clothing?src=bc
+          - text: /
+        - listitem [ref=e54]: Men Tshirts
+      - generic [ref=e56]:
+        - heading "Men Tshirts" [level=1] [ref=e57]
+        - generic [ref=e58]: "- 351864 items"
+      - generic [ref=e59]:
+        - generic [ref=e62]:
+          - generic [ref=e63]: FILTERS
+          - generic [ref=e64]:
+            - generic [ref=e65]: Categories
+            - list [ref=e66]:
+              - listitem [ref=e67]:
+                - generic [ref=e68] [cursor=pointer]:
+                  - text: Tshirts
+                  - generic [ref=e69]: (350135)
+              - listitem [ref=e71]:
+                - generic [ref=e72] [cursor=pointer]:
+                  - text: Lounge Tshirts
+                  - generic [ref=e73]: (1713)
+              - listitem [ref=e75]:
+                - generic [ref=e76] [cursor=pointer]:
+                  - text: Tshirts Smart
+                  - generic [ref=e77]: (1)
+          - generic [ref=e79]:
+            - generic [ref=e80]: Brand
+            - list [ref=e83]:
+              - listitem [ref=e84]:
+                - generic [ref=e85] [cursor=pointer]:
+                  - text: Seekbuylove
+                  - generic [ref=e86]: (29794)
+              - listitem [ref=e88]:
+                - generic [ref=e89] [cursor=pointer]:
+                  - text: WOOSTRO
+                  - generic [ref=e90]: (11182)
+              - listitem [ref=e92]:
+                - generic [ref=e93] [cursor=pointer]:
+                  - text: UDNAG
+                  - generic [ref=e94]: (9944)
+              - listitem [ref=e96]:
+                - generic [ref=e97] [cursor=pointer]:
+                  - text: Moda Rapido
+                  - generic [ref=e98]: (6015)
+              - listitem [ref=e100]:
+                - generic [ref=e101] [cursor=pointer]:
+                  - text: Roadster
+                  - generic [ref=e102]: (5219)
+              - listitem [ref=e104]:
+                - generic [ref=e105] [cursor=pointer]:
+                  - text: StyleCast x Revolte
+                  - generic [ref=e106]: (4357)
+              - listitem [ref=e108]:
+                - generic [ref=e109] [cursor=pointer]:
+                  - text: Tommy Hilfiger
+                  - generic [ref=e110]: (4182)
+              - listitem [ref=e112]:
+                - generic [ref=e113] [cursor=pointer]:
+                  - text: HERE&NOW
+                  - generic [ref=e114]: (3942)
+            - generic [ref=e116] [cursor=pointer]: + 2170 more
+          - generic [ref=e117]:
+            - generic [ref=e118]: Price
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - button [ref=e124]
+                - button [ref=e126]
+              - generic [ref=e128]: ₹0 - ₹10,000+
+          - generic [ref=e129]:
+            - generic [ref=e130]: Color
+            - list [ref=e133]:
+              - listitem [ref=e134]:
+                - generic [ref=e135] [cursor=pointer]:
+                  - text: Black
+                  - generic [ref=e137]: (66385)
+              - listitem [ref=e139]:
+                - generic [ref=e140] [cursor=pointer]:
+                  - text: White
+                  - generic [ref=e142]: (63376)
+              - listitem [ref=e144]:
+                - generic [ref=e145] [cursor=pointer]:
+                  - text: Blue
+                  - generic [ref=e147]: (30108)
+              - listitem [ref=e149]:
+                - generic [ref=e150] [cursor=pointer]:
+                  - text: Navy Blue
+                  - generic [ref=e152]: (21078)
+              - listitem [ref=e154]:
+                - generic [ref=e155] [cursor=pointer]:
+                  - text: Green
+                  - generic [ref=e157]: (20923)
+              - listitem [ref=e159]:
+                - generic [ref=e160] [cursor=pointer]:
+                  - text: Grey
+                  - generic [ref=e162]: (18784)
+              - listitem [ref=e164]:
+                - generic [ref=e165] [cursor=pointer]:
+                  - text: Red
+                  - generic [ref=e167]: (13097)
+            - generic [ref=e170] [cursor=pointer]: + 45 more
+          - generic [ref=e171]:
+            - generic [ref=e172]: Discount Range
+            - list [ref=e173]:
+              - listitem [ref=e174]:
+                - generic [ref=e175] [cursor=pointer]: 10% and above
+              - listitem [ref=e176]:
+                - generic [ref=e177] [cursor=pointer]: 20% and above
+              - listitem [ref=e178]:
+                - generic [ref=e179] [cursor=pointer]: 30% and above
+              - listitem [ref=e180]:
+                - generic [ref=e181] [cursor=pointer]: 40% and above
+              - listitem [ref=e182]:
+                - generic [ref=e183] [cursor=pointer]: 50% and above
+              - listitem [ref=e184]:
+                - generic [ref=e185] [cursor=pointer]: 60% and above
+              - listitem [ref=e186]:
+                - generic [ref=e187] [cursor=pointer]: 70% and above
+              - listitem [ref=e188]:
+                - generic [ref=e189] [cursor=pointer]: 80% and above
+              - listitem [ref=e190]:
+                - generic [ref=e191] [cursor=pointer]: 90% and above
+        - generic [ref=e193]:
+          - generic [ref=e196]:
+            - generic [ref=e200] [cursor=pointer]: "Sort by : Recommended"
+            - list [ref=e203]:
+              - listitem [ref=e204] [cursor=pointer]:
+                - heading "Bundles" [level=4] [ref=e206]
+              - listitem [ref=e208] [cursor=pointer]:
+                - heading "Country of Origin" [level=4] [ref=e210]
+              - listitem [ref=e212] [cursor=pointer]:
+                - heading "Size" [level=4] [ref=e214]
+              - listitem
+          - generic [ref=e217]:
+            - list [ref=e218]:
+              - listitem [ref=e219]:
+                - generic [ref=e220]:
+                  - generic [ref=e221]: "4.5"
+                  - generic [ref=e223]:
+                    - generic [ref=e224]: "|"
+                    - text: "219"
+                - generic [ref=e225]: AD
+                - link "The Souled Store Men Relaxed Fit Printed Brown T-Shirts The Souled Store Men Printed Cotton T-shirt Rs. 819Rs. 899(9% OFF) Only Few Left!" [ref=e226] [cursor=pointer]:
+                  - /url: tshirts/the+souled+store/the-souled-store-men-relaxed-fit-printed-brown-t-shirts/33586927/buy
+                  - img "The Souled Store Men Relaxed Fit Printed Brown T-Shirts" [ref=e232]
+                  - generic [ref=e233]:
+                    - heading "The Souled Store" [level=3] [ref=e234]
+                    - heading "Men Printed Cotton T-shirt" [level=4] [ref=e235]
+                    - generic [ref=e236]:
+                      - generic [ref=e237]:
+                        - generic [ref=e238]: Rs. 819
+                        - generic [ref=e239]: Rs. 899
+                      - text: (9% OFF)
+                    - generic [ref=e240]: Only Few Left!
+              - listitem [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e243]: "4.4"
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: "|"
+                    - text: "121"
+                - generic [ref=e247]: AD
+                - link "Nautica Brand Logo Print Pure Cotton Applique Detail Polo Collar T-shirt Nautica Polo Collar Pure Cotton Tshirt Rs. 526Rs. 1699(69% OFF)" [ref=e248] [cursor=pointer]:
+                  - /url: tshirts/nautica/nautica-brand-logo-print-pure-cotton-applique-detail-polo-collar-t-shirt/32146694/buy
+                  - img "Nautica Brand Logo Print Pure Cotton Applique Detail Polo Collar T-shirt" [ref=e254]
+                  - generic [ref=e255]:
+                    - heading "Nautica" [level=3] [ref=e256]
+                    - heading "Polo Collar Pure Cotton Tshirt" [level=4] [ref=e257]
+                    - generic [ref=e258]:
+                      - generic [ref=e259]:
+                        - generic [ref=e260]: Rs. 526
+                        - generic [ref=e261]: Rs. 1699
+                      - text: (69% OFF)
+              - listitem [ref=e262]:
+                - generic [ref=e263]:
+                  - generic [ref=e264]: "4.4"
+                  - generic [ref=e266]:
+                    - generic [ref=e267]: "|"
+                    - text: 27k
+                - link "Levis Men Soft Pure Cotton Round Neck Half Sleeve Tshirt Levis Solid Lounge T-shirt Rs. 311Rs. 649(52% OFF)" [ref=e268] [cursor=pointer]:
+                  - /url: lounge-tshirts/levis/levis-men-soft-pure-cotton-round-neck-half-sleeve-tshirt/12027432/buy
+                  - img "Levis Men Soft Pure Cotton Round Neck Half Sleeve Tshirt" [ref=e274]
+                  - generic [ref=e275]:
+                    - heading "Levis" [level=3] [ref=e276]
+                    - heading "Solid Lounge T-shirt" [level=4] [ref=e277]
+                    - generic [ref=e278]:
+                      - generic [ref=e279]:
+                        - generic [ref=e280]: Rs. 311
+                        - generic [ref=e281]: Rs. 649
+                      - text: (52% OFF)
+              - listitem [ref=e282]:
+                - generic [ref=e283]:
+                  - generic [ref=e284]: "4.4"
+                  - generic [ref=e286]:
+                    - generic [ref=e287]: "|"
+                    - text: 27k
+                - link "Levis Men Soft Pure Cotton Round Neck Half Sleeve Tshirt Levis Solid Lounge T-shirt Rs. 311Rs. 649(52% OFF)" [ref=e288] [cursor=pointer]:
+                  - /url: lounge-tshirts/levis/levis-men-soft-pure-cotton-round-neck-half-sleeve-tshirt/12027436/buy
+                  - img "Levis Men Soft Pure Cotton Round Neck Half Sleeve Tshirt" [ref=e294]
+                  - generic [ref=e295]:
+                    - heading "Levis" [level=3] [ref=e296]
+                    - heading "Solid Lounge T-shirt" [level=4] [ref=e297]
+                    - generic [ref=e298]:
+                      - generic [ref=e299]:
+                        - generic [ref=e300]: Rs. 311
+                        - generic [ref=e301]: Rs. 649
+                      - text: (52% OFF)
+              - listitem [ref=e302]:
+                - generic [ref=e303]:
+                  - generic [ref=e304]: "4.3"
+                  - generic [ref=e306]:
+                    - generic [ref=e307]: "|"
+                    - text: "507"
+                - generic [ref=e308]: AD
+                - link "BOLDFIT Men Dry Fit Training Tshirt BOLDFIT Men Training or Gym T-shirt Rs. 499Rs. 999(50% OFF)" [ref=e309] [cursor=pointer]:
+                  - /url: tshirts/boldfit/boldfit-men-dry-fit-training-tshirt/32491273/buy
+                  - img "BOLDFIT Men Dry Fit Training Tshirt" [ref=e315]
+                  - generic [ref=e316]:
+                    - heading "BOLDFIT" [level=3] [ref=e317]
+                    - heading "Men Training or Gym T-shirt" [level=4] [ref=e318]
+                    - generic [ref=e319]:
+                      - generic [ref=e320]:
+                        - generic [ref=e321]: Rs. 499
+                        - generic [ref=e322]: Rs. 999
+                      - text: (50% OFF)
+              - listitem [ref=e323]:
+                - generic [ref=e324]:
+                  - generic [ref=e325]: "4"
+                  - generic [ref=e327]:
+                    - generic [ref=e328]: "|"
+                    - text: 1.9k
+                - link "Jack & Jones Men Navy Blue Solid Cotton Lounge T-shirt Jack & Jones Men Solid Lounge T-shirt Rs. 315Rs. 699(55% OFF)" [ref=e329] [cursor=pointer]:
+                  - /url: lounge-tshirts/jack+%26+jones/jack--jones-men-navy-blue-solid-cotton-lounge-t-shirt/18389666/buy
+                  - img "Jack & Jones Men Navy Blue Solid Cotton Lounge T-shirt" [ref=e335]
+                  - generic [ref=e336]:
+                    - heading "Jack & Jones" [level=3] [ref=e337]
+                    - heading "Men Solid Lounge T-shirt" [level=4] [ref=e338]
+                    - generic [ref=e339]:
+                      - generic [ref=e340]:
+                        - generic [ref=e341]: Rs. 315
+                        - generic [ref=e342]: Rs. 699
+                      - text: (55% OFF)
+              - listitem [ref=e343]:
+                - link "Tshirts Buddy Men Printed Polo Collar T-shirt NEW Tshirts Buddy Men Digital Print Polo Tee Rs. 585Rs. 1399(58% OFF)" [ref=e344] [cursor=pointer]:
+                  - /url: tshirts/tshirts+buddy/tshirts-buddy-men-printed-polo-collar-t-shirt/43042540/buy
+                  - generic [ref=e346]:
+                    - img "Tshirts Buddy Men Printed Polo Collar T-shirt" [ref=e350]
+                    - generic [ref=e351]: NEW
+                  - generic [ref=e352]:
+                    - heading "Tshirts Buddy" [level=3] [ref=e353]
+                    - heading "Men Digital Print Polo Tee" [level=4] [ref=e354]
+                    - generic [ref=e355]:
+                      - generic [ref=e356]:
+                        - generic [ref=e357]: Rs. 585
+                        - generic [ref=e358]: Rs. 1399
+                      - text: (58% OFF)
+              - listitem [ref=e359]:
+                - generic [ref=e360]:
+                  - generic [ref=e361]: "4.4"
+                  - generic [ref=e363]:
+                    - generic [ref=e364]: "|"
+                    - text: "845"
+                - generic [ref=e365]: AD
+                - link "Nautica Polo Collar Pure Cotton T-shirt Nautica Polo Collar T-shirt Rs. 509Rs. 1499(66% OFF)" [ref=e366] [cursor=pointer]:
+                  - /url: tshirts/nautica/nautica-polo-collar-pure-cotton-t-shirt/31667629/buy
+                  - img "Nautica Polo Collar Pure Cotton T-shirt" [ref=e372]
+                  - generic [ref=e373]:
+                    - heading "Nautica" [level=3] [ref=e374]
+                    - heading "Polo Collar T-shirt" [level=4] [ref=e375]
+                    - generic [ref=e376]:
+                      - generic [ref=e377]:
+                        - generic [ref=e378]: Rs. 509
+                        - generic [ref=e379]: Rs. 1499
+                      - text: (66% OFF)
+              - listitem [ref=e380]:
+                - generic [ref=e381]:
+                  - generic [ref=e382]: "4.4"
+                  - generic [ref=e384]:
+                    - generic [ref=e385]: "|"
+                    - text: 27k
+                - link "Levis Men Soft Pure Cotton Round Neck Half Sleeve Tshirt Levis Solid Lounge T-shirt Rs. 311Rs. 649(52% OFF)" [ref=e386] [cursor=pointer]:
+                  - /url: lounge-tshirts/levis/levis-men-soft-pure-cotton-round-neck-half-sleeve-tshirt/12027418/buy
+                  - img "Levis Men Soft Pure Cotton Round Neck Half Sleeve Tshirt" [ref=e392]
+                  - generic [ref=e393]:
+                    - heading "Levis" [level=3] [ref=e394]
+                    - heading "Solid Lounge T-shirt" [level=4] [ref=e395]
+                    - generic [ref=e396]:
+                      - generic [ref=e397]:
+                        - generic [ref=e398]: Rs. 311
+                        - generic [ref=e399]: Rs. 649
+                      - text: (52% OFF)
+              - listitem [ref=e400]:
+                - link "max Men Printed T-shirt max Men Printed T-shirt Rs. 499 Only Few Left!" [ref=e401] [cursor=pointer]:
+                  - /url: tshirts/max/max-men-printed-t-shirt/43349274/buy
+                  - img "max Men Printed T-shirt" [ref=e407]
+                  - generic [ref=e408]:
+                    - heading "max" [level=3] [ref=e409]
+                    - heading "Men Printed T-shirt" [level=4] [ref=e410]
+                    - generic [ref=e412]: Rs. 499
+                    - generic [ref=e413]: Only Few Left!
+              - listitem [ref=e414]:
+                - generic [ref=e415]:
+                  - generic [ref=e416]: "4.5"
+                  - generic [ref=e418]:
+                    - generic [ref=e419]: "|"
+                    - text: "966"
+                - generic [ref=e420]: AD
+                - link "Nautica Men Teal Blue Pure Cotton Typography Printed T-shirt Nautica Men Typography Printed T-shirt Rs. 899 Only Few Left!" [ref=e421] [cursor=pointer]:
+                  - /url: tshirts/nautica/nautica-men-teal-blue-pure-cotton-typography-printed-t-shirt/13802478/buy
+                  - img "Nautica Men Teal Blue Pure Cotton Typography Printed T-shirt" [ref=e427]
+                  - generic [ref=e428]:
+                    - heading "Nautica" [level=3] [ref=e429]
+                    - heading "Men Typography Printed T-shirt" [level=4] [ref=e430]
+                    - generic [ref=e432]: Rs. 899
+                    - generic [ref=e433]: Only Few Left!
+              - listitem [ref=e434]:
+                - generic [ref=e435]:
+                  - generic [ref=e436]: "3.6"
+                  - generic [ref=e438]:
+                    - generic [ref=e439]: "|"
+                    - text: 1.9k
+                - link "THE BEETEL HOUSE Men Polo Collar T-shirt Rs. 305Rs. 1499(80% OFF)" [ref=e440] [cursor=pointer]:
+                  - /url: tshirts/the+beetel+house/the-beetel-house-men-colourblocked-polo-collar-t-shirt/41341474/buy
+                  - generic [ref=e445]:
+                    - heading "THE BEETEL HOUSE" [level=3] [ref=e446]
+                    - heading "Men Polo Collar T-shirt" [level=4] [ref=e447]
+                    - generic [ref=e448]:
+                      - generic [ref=e449]:
+                        - generic [ref=e450]: Rs. 305
+                        - generic [ref=e451]: Rs. 1499
+                      - text: (80% OFF)
+              - listitem [ref=e452]:
+                - link "APSH.ECO Men Polo Collar T-shirt Rs. 467Rs. 1299(64% OFF)" [ref=e453] [cursor=pointer]:
+                  - /url: tshirts/apsh.eco/apsheco-men-polo-collar-t-shirt/43039094/buy
+                  - generic [ref=e458]:
+                    - heading "APSH.ECO" [level=3] [ref=e459]
+                    - heading "Men Polo Collar T-shirt" [level=4] [ref=e460]
+                    - generic [ref=e461]:
+                      - generic [ref=e462]:
+                        - generic [ref=e463]: Rs. 467
+                        - generic [ref=e464]: Rs. 1299
+                      - text: (64% OFF)
+              - listitem [ref=e465]:
+                - generic [ref=e466]:
+                  - generic [ref=e467]: "4.5"
+                  - generic [ref=e469]:
+                    - generic [ref=e470]: "|"
+                    - text: 1.1k
+                - generic [ref=e471]: AD
+                - link "Nautica Band Collar Cotton T-shirt Rs. 769Rs. 999(23% OFF)" [ref=e472] [cursor=pointer]:
+                  - /url: tshirts/nautica/nautica-band-collar-pure-cotton-t-shirt/28157354/buy
+                  - generic [ref=e477]:
+                    - heading "Nautica" [level=3] [ref=e478]
+                    - heading "Band Collar Cotton T-shirt" [level=4] [ref=e479]
+                    - generic [ref=e480]:
+                      - generic [ref=e481]:
+                        - generic [ref=e482]: Rs. 769
+                        - generic [ref=e483]: Rs. 999
+                      - text: (23% OFF)
+              - listitem [ref=e484]:
+                - generic [ref=e485]:
+                  - generic [ref=e486]: "4.4"
+                  - generic [ref=e488]:
+                    - generic [ref=e489]: "|"
+                    - text: 6.2k
+                - link "Levis Solid V-Neck Lounge T-shirt Rs. 376Rs. 649(42% OFF)" [ref=e490] [cursor=pointer]:
+                  - /url: lounge-tshirts/levis/levis-men-pure-cotton-v-neck-short-sleeve-tshirt/12027430/buy
+                  - generic [ref=e495]:
+                    - heading "Levis" [level=3] [ref=e496]
+                    - heading "Solid V-Neck Lounge T-shirt" [level=4] [ref=e497]
+                    - generic [ref=e498]:
+                      - generic [ref=e499]:
+                        - generic [ref=e500]: Rs. 376
+                        - generic [ref=e501]: Rs. 649
+                      - text: (42% OFF)
+              - listitem [ref=e502]:
+                - link "NEW JUMPCUTS Men Colourblocked Polo Collar T-shirt Rs. 470Rs. 1839(74% OFF)" [ref=e503] [cursor=pointer]:
+                  - /url: tshirts/jumpcuts/jumpcuts-men-colourblocked-polo-collar-t-shirt/43649591/buy
+                  - generic [ref=e508]: NEW
+                  - generic [ref=e509]:
+                    - heading "JUMPCUTS" [level=3] [ref=e510]
+                    - heading "Men Colourblocked Polo Collar T-shirt" [level=4] [ref=e511]
+                    - generic [ref=e512]:
+                      - generic [ref=e513]:
+                        - generic [ref=e514]: Rs. 470
+                        - generic [ref=e515]: Rs. 1839
+                      - text: (74% OFF)
+              - listitem [ref=e516]:
+                - generic [ref=e517]:
+                  - generic [ref=e518]: "4.5"
+                  - generic [ref=e520]:
+                    - generic [ref=e521]: "|"
+                    - text: 2.7k
+                - generic [ref=e522]: AD
+                - link "Pepe Jeans Men Brand Logo Polo Collar Pockets T-shirt Rs. 683Rs. 1199(43% OFF)" [ref=e523] [cursor=pointer]:
+                  - /url: tshirts/pepe+jeans/pepe-jeans-men-brand-logo-polo-collar-pockets-t-shirt/40172014/buy
+                  - generic [ref=e528]:
+                    - heading "Pepe Jeans" [level=3] [ref=e529]
+                    - heading "Men Brand Logo Polo Collar Pockets T-shirt" [level=4] [ref=e530]
+                    - generic [ref=e531]:
+                      - generic [ref=e532]:
+                        - generic [ref=e533]: Rs. 683
+                        - generic [ref=e534]: Rs. 1199
+                      - text: (43% OFF)
+              - listitem [ref=e535]:
+                - generic [ref=e536]:
+                  - generic [ref=e537]: "4.7"
+                  - generic [ref=e539]:
+                    - generic [ref=e540]: "|"
+                    - text: 1.3k
+                - link "Skechers Men MI IPL FAN JERSEY Rs. 349Rs. 999(65% OFF)" [ref=e541] [cursor=pointer]:
+                  - /url: tshirts/skechers/skechers-mumbai-indians-2026-men-official-ipl-fan-jersey/40502682/buy
+                  - generic [ref=e546]:
+                    - heading "Skechers" [level=3] [ref=e547]
+                    - heading "Men MI IPL FAN JERSEY" [level=4] [ref=e548]
+                    - generic [ref=e549]:
+                      - generic [ref=e550]:
+                        - generic [ref=e551]: Rs. 349
+                        - generic [ref=e552]: Rs. 999
+                      - text: (65% OFF)
+              - listitem [ref=e553]:
+                - link "NEW Tshirts Buddy Men Waffle Fabric Polo T Shirt Rs. 585Rs. 1399(58% OFF)" [ref=e554] [cursor=pointer]:
+                  - /url: tshirts/tshirts+buddy/tshirts-buddy-men-printed-polo-collar-t-shirt/43009705/buy
+                  - generic [ref=e559]: NEW
+                  - generic [ref=e560]:
+                    - heading "Tshirts Buddy" [level=3] [ref=e561]
+                    - heading "Men Waffle Fabric Polo T Shirt" [level=4] [ref=e562]
+                    - generic [ref=e563]:
+                      - generic [ref=e564]:
+                        - generic [ref=e565]: Rs. 585
+                        - generic [ref=e566]: Rs. 1399
+                      - text: (58% OFF)
+              - listitem [ref=e567]:
+                - generic [ref=e568]:
+                  - generic [ref=e569]: "4.5"
+                  - generic [ref=e571]:
+                    - generic [ref=e572]: "|"
+                    - text: 2.7k
+                - generic [ref=e573]: AD
+                - link "Pepe Jeans Men Brand Logo Polo Collar T-shirt Rs. 683Rs. 1199(43% OFF)" [ref=e574] [cursor=pointer]:
+                  - /url: tshirts/pepe+jeans/pepe-jeans-men-brand-logo-polo-collar-t-shirt/40172010/buy
+                  - generic [ref=e579]:
+                    - heading "Pepe Jeans" [level=3] [ref=e580]
+                    - heading "Men Brand Logo Polo Collar T-shirt" [level=4] [ref=e581]
+                    - generic [ref=e582]:
+                      - generic [ref=e583]:
+                        - generic [ref=e584]: Rs. 683
+                        - generic [ref=e585]: Rs. 1199
+                      - text: (43% OFF)
+              - listitem [ref=e586]:
+                - generic [ref=e587]:
+                  - generic [ref=e588]: "4.4"
+                  - generic [ref=e590]:
+                    - generic [ref=e591]: "|"
+                    - text: 1.2k
+                - link "U.S. Polo Assn. Pure Cotton Lounge Tshirt Rs. 747Rs. 849(12% OFF)" [ref=e592] [cursor=pointer]:
+                  - /url: lounge-tshirts/u.s.+polo+assn./us-polo-assn-men-pure-cotton-round-neck-moisture-wicking-lounge-tshirt/36468841/buy
+                  - generic [ref=e597]:
+                    - heading "U.S. Polo Assn." [level=3] [ref=e598]
+                    - heading "Pure Cotton Lounge Tshirt" [level=4] [ref=e599]
+                    - generic [ref=e600]:
+                      - generic [ref=e601]:
+                        - generic [ref=e602]: Rs. 747
+                        - generic [ref=e603]: Rs. 849
+                      - text: (12% OFF)
+              - listitem [ref=e604]:
+                - generic [ref=e605]:
+                  - generic [ref=e606]: "4.4"
+                  - generic [ref=e608]:
+                    - generic [ref=e609]: "|"
+                    - text: 5.5k
+                - link "Pepe Jeans Men Lounge T-Shirt Rs. 423Rs. 799(47% OFF)" [ref=e610] [cursor=pointer]:
+                  - /url: lounge-tshirts/pepe+jeans/pepe-jeans-men-lounge-t-shirt/34851620/buy
+                  - generic [ref=e615]:
+                    - heading "Pepe Jeans" [level=3] [ref=e616]
+                    - heading "Men Lounge T-Shirt" [level=4] [ref=e617]
+                    - generic [ref=e618]:
+                      - generic [ref=e619]:
+                        - generic [ref=e620]: Rs. 423
+                        - generic [ref=e621]: Rs. 799
+                      - text: (47% OFF)
+              - listitem [ref=e622]:
+                - generic [ref=e623]:
+                  - generic [ref=e624]: "4.4"
+                  - generic [ref=e626]:
+                    - generic [ref=e627]: "|"
+                    - text: 4.1k
+                - generic [ref=e628]: AD
+                - link "Van Heusen Innerwear Men Solid Lounge Tshirt Rs. 329Rs. 599(45% OFF)" [ref=e629] [cursor=pointer]:
+                  - /url: lounge-tshirts/van+heusen+innerwear/van-heusen-men-cotton-crew-neck-solid-regular-fit-short-sleeves-lounge-tshirt/29638036/buy
+                  - generic [ref=e634]:
+                    - heading "Van Heusen Innerwear" [level=3] [ref=e635]
+                    - heading "Men Solid Lounge Tshirt" [level=4] [ref=e636]
+                    - generic [ref=e637]:
+                      - generic [ref=e638]:
+                        - generic [ref=e639]: Rs. 329
+                        - generic [ref=e640]: Rs. 599
+                      - text: (45% OFF)
+              - listitem [ref=e641]:
+                - link "Aeropostale Dyed Pure Cotton T-shirt Rs. 559Rs. 1599(65% OFF)" [ref=e642] [cursor=pointer]:
+                  - /url: tshirts/aeropostale/aeropostale-dyed-effect-pure-cotton-t-shirt/39467581/buy
+                  - generic [ref=e647]:
+                    - heading "Aeropostale" [level=3] [ref=e648]
+                    - heading "Dyed Pure Cotton T-shirt" [level=4] [ref=e649]
+                    - generic [ref=e650]:
+                      - generic [ref=e651]:
+                        - generic [ref=e652]: Rs. 559
+                        - generic [ref=e653]: Rs. 1599
+                      - text: (65% OFF)
+              - listitem [ref=e654]:
+                - link "8 Minutes Terry Oversized Tshirt Rs. 526Rs. 2499(79% OFF)" [ref=e655] [cursor=pointer]:
+                  - /url: tshirts/8+minutes/8-minutes-men-t-shirt/42324540/buy
+                  - generic [ref=e660]:
+                    - heading "8 Minutes" [level=3] [ref=e661]
+                    - heading "Terry Oversized Tshirt" [level=4] [ref=e662]
+                    - generic [ref=e663]:
+                      - generic [ref=e664]:
+                        - generic [ref=e665]: Rs. 526
+                        - generic [ref=e666]: Rs. 2499
+                      - text: (79% OFF)
+              - listitem [ref=e667]:
+                - generic [ref=e668]: AD
+                - link "Bene Kleed Cotton Oversized T-shirt Rs. 725Rs. 999(27% OFF) Only Few Left!" [ref=e669] [cursor=pointer]:
+                  - /url: tshirts/bene+kleed/bene-kleed-men-typography-printed-cotton-oversized-t-shirt/43464615/buy
+                  - generic [ref=e674]:
+                    - heading "Bene Kleed" [level=3] [ref=e675]
+                    - heading "Cotton Oversized T-shirt" [level=4] [ref=e676]
+                    - generic [ref=e677]:
+                      - generic [ref=e678]:
+                        - generic [ref=e679]: Rs. 725
+                        - generic [ref=e680]: Rs. 999
+                      - text: (27% OFF)
+                    - generic [ref=e681]: Only Few Left!
+              - listitem [ref=e682]:
+                - generic [ref=e683]:
+                  - generic [ref=e684]: "4.6"
+                  - generic [ref=e686]:
+                    - generic [ref=e687]: "|"
+                    - text: 5k
+                - link "Puma Train All Day Men Tee Rs. 719Rs. 1799(60% OFF)" [ref=e688] [cursor=pointer]:
+                  - /url: tshirts/puma/puma-train-all-day-men-breathable-training-tee/35720668/buy
+                  - generic [ref=e693]:
+                    - heading "Puma" [level=3] [ref=e694]
+                    - heading "Train All Day Men Tee" [level=4] [ref=e695]
+                    - generic [ref=e696]:
+                      - generic [ref=e697]:
+                        - generic [ref=e698]: Rs. 719
+                        - generic [ref=e699]: Rs. 1799
+                      - text: (60% OFF)
+              - listitem [ref=e700]:
+                - generic [ref=e701]:
+                  - generic [ref=e702]: "3.4"
+                  - generic [ref=e704]:
+                    - generic [ref=e705]: "|"
+                    - text: "283"
+                - link "Netclick Men Henley Neck T-shirt Rs. 370Rs. 1999(81% OFF)" [ref=e706] [cursor=pointer]:
+                  - /url: tshirts/netclick/netclick-men-henley-neck-t-shirt/42921151/buy
+                  - generic [ref=e711]:
+                    - heading "Netclick" [level=3] [ref=e712]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e713]
+                    - generic [ref=e714]:
+                      - generic [ref=e715]:
+                        - generic [ref=e716]: Rs. 370
+                        - generic [ref=e717]: Rs. 1999
+                      - text: (81% OFF)
+              - listitem [ref=e718]:
+                - generic [ref=e719]:
+                  - generic [ref=e720]: "4.3"
+                  - generic [ref=e722]:
+                    - generic [ref=e723]: "|"
+                    - text: "499"
+                - generic [ref=e724]: AD
+                - link "glitchez Printed Oversized T-shirt Rs. 327Rs. 799(59% OFF)" [ref=e725] [cursor=pointer]:
+                  - /url: tshirts/glitchez/glitchez-printed-oversized-t-shirt/31352924/buy
+                  - generic [ref=e730]:
+                    - heading "glitchez" [level=3] [ref=e731]
+                    - heading "Printed Oversized T-shirt" [level=4] [ref=e732]
+                    - generic [ref=e733]:
+                      - generic [ref=e734]:
+                        - generic [ref=e735]: Rs. 327
+                        - generic [ref=e736]: Rs. 799
+                      - text: (59% OFF)
+              - listitem [ref=e737]:
+                - generic [ref=e738]:
+                  - generic [ref=e739]: "4.4"
+                  - generic [ref=e741]:
+                    - generic [ref=e742]: "|"
+                    - text: 27k
+                - link "Levis Solid Lounge T-shirt Rs. 311Rs. 649(52% OFF)" [ref=e743] [cursor=pointer]:
+                  - /url: lounge-tshirts/levis/levis-men-soft-pure-cotton-round-neck-half-sleeve-tshirt/12027422/buy
+                  - generic [ref=e748]:
+                    - heading "Levis" [level=3] [ref=e749]
+                    - heading "Solid Lounge T-shirt" [level=4] [ref=e750]
+                    - generic [ref=e751]:
+                      - generic [ref=e752]:
+                        - generic [ref=e753]: Rs. 311
+                        - generic [ref=e754]: Rs. 649
+                      - text: (52% OFF)
+              - listitem [ref=e755]:
+                - link "BOLD VIEW Men Printed Polo Collar Pockets T-shirt Rs. 368Rs. 1299(72% OFF)" [ref=e756] [cursor=pointer]:
+                  - /url: tshirts/bold+view/bold-view-men-printed-polo-collar-pockets-t-shirt/43907627/buy
+                  - generic [ref=e761]:
+                    - heading "BOLD VIEW" [level=3] [ref=e762]
+                    - heading "Men Printed Polo Collar Pockets T-shirt" [level=4] [ref=e763]
+                    - generic [ref=e764]:
+                      - generic [ref=e765]:
+                        - generic [ref=e766]: Rs. 368
+                        - generic [ref=e767]: Rs. 1299
+                      - text: (72% OFF)
+              - listitem [ref=e768]:
+                - generic [ref=e769]:
+                  - generic [ref=e770]: "4.4"
+                  - generic [ref=e772]:
+                    - generic [ref=e773]: "|"
+                    - text: 1k
+                - generic [ref=e774]: AD
+                - link "Van Heusen Innerwear Men Lounge Tshirts Rs. 341Rs. 609(44% OFF)" [ref=e775] [cursor=pointer]:
+                  - /url: lounge-tshirts/van+heusen+innerwear/van-heusen-innerwear-crew-neck-lounge-tshirts-regular-fit-short-sleeves-soft-breathable/29638042/buy
+                  - generic [ref=e780]:
+                    - heading "Van Heusen Innerwear" [level=3] [ref=e781]
+                    - heading "Men Lounge Tshirts" [level=4] [ref=e782]
+                    - generic [ref=e783]:
+                      - generic [ref=e784]:
+                        - generic [ref=e785]: Rs. 341
+                        - generic [ref=e786]: Rs. 609
+                      - text: (44% OFF)
+              - listitem [ref=e787]:
+                - generic [ref=e788]:
+                  - generic [ref=e789]: "4"
+                  - generic [ref=e791]:
+                    - generic [ref=e792]: "|"
+                    - text: 1.9k
+                - link "THE BEETEL HOUSE Men Polo Collar T-shirt Rs. 305Rs. 1499(80% OFF)" [ref=e793] [cursor=pointer]:
+                  - /url: tshirts/the+beetel+house/the-beetel-house-men-colourblocked-polo-collar-t-shirt/41341493/buy
+                  - generic [ref=e798]:
+                    - heading "THE BEETEL HOUSE" [level=3] [ref=e799]
+                    - heading "Men Polo Collar T-shirt" [level=4] [ref=e800]
+                    - generic [ref=e801]:
+                      - generic [ref=e802]:
+                        - generic [ref=e803]: Rs. 305
+                        - generic [ref=e804]: Rs. 1499
+                      - text: (80% OFF)
+              - listitem [ref=e805]:
+                - link "NEW Tshirts Buddy Printed Polo Tshirts For Men Rs. 585Rs. 1399(58% OFF)" [ref=e806] [cursor=pointer]:
+                  - /url: tshirts/tshirts+buddy/tshirts-buddy-men-printed-polo-collar-t-shirt/43597714/buy
+                  - generic [ref=e811]: NEW
+                  - generic [ref=e812]:
+                    - heading "Tshirts Buddy" [level=3] [ref=e813]
+                    - heading "Printed Polo Tshirts For Men" [level=4] [ref=e814]
+                    - generic [ref=e815]:
+                      - generic [ref=e816]:
+                        - generic [ref=e817]: Rs. 585
+                        - generic [ref=e818]: Rs. 1399
+                      - text: (58% OFF)
+              - listitem [ref=e819]:
+                - generic [ref=e820]:
+                  - generic [ref=e821]: "4.5"
+                  - generic [ref=e823]:
+                    - generic [ref=e824]: "|"
+                    - text: 2.7k
+                - generic [ref=e825]: AD
+                - link "Pepe Jeans Men Brand Logo Polo Collar T-shirt Rs. 683Rs. 1199(43% OFF)" [ref=e826] [cursor=pointer]:
+                  - /url: tshirts/pepe+jeans/pepe-jeans-men-brand-logo-polo-collar-t-shirt/40172003/buy
+                  - generic [ref=e831]:
+                    - heading "Pepe Jeans" [level=3] [ref=e832]
+                    - heading "Men Brand Logo Polo Collar T-shirt" [level=4] [ref=e833]
+                    - generic [ref=e834]:
+                      - generic [ref=e835]:
+                        - generic [ref=e836]: Rs. 683
+                        - generic [ref=e837]: Rs. 1199
+                      - text: (43% OFF)
+              - listitem [ref=e838]:
+                - generic [ref=e839]:
+                  - generic [ref=e840]: "4.2"
+                  - generic [ref=e842]:
+                    - generic [ref=e843]: "|"
+                    - text: 2.1k
+                - link "Imsa Moda Men Henley Neck T-shirt Rs. 317Rs. 1999(84% OFF)" [ref=e844] [cursor=pointer]:
+                  - /url: tshirts/imsa+moda/imsa-moda-men-henley-neck-t-shirt/42122809/buy
+                  - generic [ref=e849]:
+                    - heading "Imsa Moda" [level=3] [ref=e850]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e851]
+                    - generic [ref=e852]:
+                      - generic [ref=e853]:
+                        - generic [ref=e854]: Rs. 317
+                        - generic [ref=e855]: Rs. 1999
+                      - text: (84% OFF)
+              - listitem [ref=e856]:
+                - link "NEW Tshirts Buddy Men Half Sleeve Polo T Shirt Rs. 585Rs. 1399(58% OFF)" [ref=e857] [cursor=pointer]:
+                  - /url: tshirts/tshirts+buddy/tshirts-buddy-men-printed-polo-collar-t-shirt/43009701/buy
+                  - generic [ref=e862]: NEW
+                  - generic [ref=e863]:
+                    - heading "Tshirts Buddy" [level=3] [ref=e864]
+                    - heading "Men Half Sleeve Polo T Shirt" [level=4] [ref=e865]
+                    - generic [ref=e866]:
+                      - generic [ref=e867]:
+                        - generic [ref=e868]: Rs. 585
+                        - generic [ref=e869]: Rs. 1399
+                      - text: (58% OFF)
+              - listitem [ref=e870]:
+                - generic [ref=e871]:
+                  - generic [ref=e872]: "3.8"
+                  - generic [ref=e874]:
+                    - generic [ref=e875]: "|"
+                    - text: "20"
+                - generic [ref=e876]: AD
+                - link "Jack & Jones Men Brand Logo Printed Boxy T-shirt Rs. 599Rs. 999(40% OFF)" [ref=e877] [cursor=pointer]:
+                  - /url: tshirts/jack+%26+jones/jack--jones-men-brand-logo-printed-boxy-t-shirt/42196599/buy
+                  - generic [ref=e882]:
+                    - heading "Jack & Jones" [level=3] [ref=e883]
+                    - heading "Men Brand Logo Printed Boxy T-shirt" [level=4] [ref=e884]
+                    - generic [ref=e885]:
+                      - generic [ref=e886]:
+                        - generic [ref=e887]: Rs. 599
+                        - generic [ref=e888]: Rs. 999
+                      - text: (40% OFF)
+              - listitem [ref=e889]:
+                - generic [ref=e890]:
+                  - generic [ref=e891]: "4.1"
+                  - generic [ref=e893]:
+                    - generic [ref=e894]: "|"
+                    - text: 1.5k
+                - link "BDSQUARE Waffle Plain Tshirt Rs. 675Rs. 2499(73% OFF)" [ref=e895] [cursor=pointer]:
+                  - /url: tshirts/bdsquare/bdsquare-men-drop-shoulder-sleeves-t-shirt/39825768/buy
+                  - generic [ref=e900]:
+                    - heading "BDSQUARE" [level=3] [ref=e901]
+                    - heading "Waffle Plain Tshirt" [level=4] [ref=e902]
+                    - generic [ref=e903]:
+                      - generic [ref=e904]:
+                        - generic [ref=e905]: Rs. 675
+                        - generic [ref=e906]: Rs. 2499
+                      - text: (73% OFF)
+              - listitem [ref=e907]:
+                - link "JERKYN Men Henley Neck T-shirt Rs. 378Rs. 1499(75% OFF)" [ref=e908] [cursor=pointer]:
+                  - /url: tshirts/jerkyn/jerkyn-men-henley-neck-t-shirt/43572720/buy
+                  - generic [ref=e913]:
+                    - heading "JERKYN" [level=3] [ref=e914]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e915]
+                    - generic [ref=e916]:
+                      - generic [ref=e917]:
+                        - generic [ref=e918]: Rs. 378
+                        - generic [ref=e919]: Rs. 1499
+                      - text: (75% OFF)
+              - listitem [ref=e920]:
+                - generic [ref=e921]:
+                  - generic [ref=e922]: "4.3"
+                  - generic [ref=e924]:
+                    - generic [ref=e925]: "|"
+                    - text: 3k
+                - generic [ref=e926]: AD
+                - link "glitchez Henley Neck T-shirt Rs. 303Rs. 799(62% OFF)" [ref=e927] [cursor=pointer]:
+                  - /url: tshirts/glitchez/glitchez-henley-neck-regular-fit-t-shirt/32606767/buy
+                  - generic [ref=e932]:
+                    - heading "glitchez" [level=3] [ref=e933]
+                    - heading "Henley Neck T-shirt" [level=4] [ref=e934]
+                    - generic [ref=e935]:
+                      - generic [ref=e936]:
+                        - generic [ref=e937]: Rs. 303
+                        - generic [ref=e938]: Rs. 799
+                      - text: (62% OFF)
+              - listitem [ref=e939]:
+                - generic [ref=e940]:
+                  - generic [ref=e941]: "4.2"
+                  - generic [ref=e943]:
+                    - generic [ref=e944]: "|"
+                    - text: 2.1k
+                - link "Imsa Moda Men Henley Neck T-shirt Rs. 315Rs. 1999(84% OFF)" [ref=e945] [cursor=pointer]:
+                  - /url: tshirts/imsa+moda/imsa-moda-men-henley-neck-t-shirt/42122810/buy
+                  - generic [ref=e950]:
+                    - heading "Imsa Moda" [level=3] [ref=e951]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e952]
+                    - generic [ref=e953]:
+                      - generic [ref=e954]:
+                        - generic [ref=e955]: Rs. 315
+                        - generic [ref=e956]: Rs. 1999
+                      - text: (84% OFF)
+              - listitem [ref=e957]:
+                - link "Derada Men Brand Logo Printed Boxy T-shirt Rs. 255Rs. 1299(80% OFF)" [ref=e958] [cursor=pointer]:
+                  - /url: tshirts/derada/derada-men-brand-logo-scuderia-ferrari-formula-1-printed-boxy-t-shirt/43270893/buy
+                  - generic [ref=e963]:
+                    - heading "Derada" [level=3] [ref=e964]
+                    - heading "Men Brand Logo Printed Boxy T-shirt" [level=4] [ref=e965]
+                    - generic [ref=e966]:
+                      - generic [ref=e967]:
+                        - generic [ref=e968]: Rs. 255
+                        - generic [ref=e969]: Rs. 1299
+                      - text: (80% OFF)
+              - listitem [ref=e970]:
+                - generic [ref=e971]:
+                  - generic [ref=e972]: "4.4"
+                  - generic [ref=e974]:
+                    - generic [ref=e975]: "|"
+                    - text: "277"
+                - generic [ref=e976]: AD
+                - link "WROGN Pure Cotton T-shirt Rs. 635Rs. 1199(47% OFF)" [ref=e977] [cursor=pointer]:
+                  - /url: tshirts/wrogn/wrogn-pure-cotton-short-sleeves-round-neck-oversized-t-shirt/33842162/buy
+                  - generic [ref=e982]:
+                    - heading "WROGN" [level=3] [ref=e983]
+                    - heading "Pure Cotton T-shirt" [level=4] [ref=e984]
+                    - generic [ref=e985]:
+                      - generic [ref=e986]:
+                        - generic [ref=e987]: Rs. 635
+                        - generic [ref=e988]: Rs. 1199
+                      - text: (47% OFF)
+              - listitem [ref=e989]:
+                - link "JERKYN Men Henley Neck T-shirt Rs. 378Rs. 1499(75% OFF)" [ref=e990] [cursor=pointer]:
+                  - /url: tshirts/jerkyn/jerkyn-men-henley-neck-t-shirt/43572723/buy
+                  - generic [ref=e995]:
+                    - heading "JERKYN" [level=3] [ref=e996]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e997]
+                    - generic [ref=e998]:
+                      - generic [ref=e999]:
+                        - generic [ref=e1000]: Rs. 378
+                        - generic [ref=e1001]: Rs. 1499
+                      - text: (75% OFF)
+              - listitem [ref=e1002]:
+                - link "JERKYN Men Henley Neck T-shirt Rs. 378Rs. 1499(75% OFF)" [ref=e1003] [cursor=pointer]:
+                  - /url: tshirts/jerkyn/jerkyn-men-henley-neck-t-shirt/43572724/buy
+                  - generic [ref=e1008]:
+                    - heading "JERKYN" [level=3] [ref=e1009]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e1010]
+                    - generic [ref=e1011]:
+                      - generic [ref=e1012]:
+                        - generic [ref=e1013]: Rs. 378
+                        - generic [ref=e1014]: Rs. 1499
+                      - text: (75% OFF)
+              - listitem [ref=e1015]:
+                - generic [ref=e1016]:
+                  - generic [ref=e1017]: "4.3"
+                  - generic [ref=e1019]:
+                    - generic [ref=e1020]: "|"
+                    - text: 4k
+                - generic [ref=e1021]: AD
+                - link "TOGS & TERRE Oversized Cotton T-shirt Rs. 385Rs. 1499(74% OFF)" [ref=e1022] [cursor=pointer]:
+                  - /url: tshirts/togs+%26+terre/togs--terre-graphic-printed-oversized-organic-cotton-t-shirt/34955438/buy
+                  - generic [ref=e1027]:
+                    - heading "TOGS & TERRE" [level=3] [ref=e1028]
+                    - heading "Oversized Cotton T-shirt" [level=4] [ref=e1029]
+                    - generic [ref=e1030]:
+                      - generic [ref=e1031]:
+                        - generic [ref=e1032]: Rs. 385
+                        - generic [ref=e1033]: Rs. 1499
+                      - text: (74% OFF)
+              - listitem [ref=e1034]:
+                - link "JERKYN Men Henley Neck T-shirt Rs. 378Rs. 1499(75% OFF)" [ref=e1035] [cursor=pointer]:
+                  - /url: tshirts/jerkyn/jerkyn-men-henley-neck-t-shirt/43572721/buy
+                  - generic [ref=e1040]:
+                    - heading "JERKYN" [level=3] [ref=e1041]
+                    - heading "Men Henley Neck T-shirt" [level=4] [ref=e1042]
+                    - generic [ref=e1043]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1045]: Rs. 378
+                        - generic [ref=e1046]: Rs. 1499
+                      - text: (75% OFF)
+              - listitem [ref=e1047]:
+                - link "Derada Men Graphic T-shirt Rs. 255Rs. 1299(80% OFF)" [ref=e1048] [cursor=pointer]:
+                  - /url: tshirts/derada/derada-men-harry-potter-graphic-t-shirt/43275998/buy
+                  - generic [ref=e1053]:
+                    - heading "Derada" [level=3] [ref=e1054]
+                    - heading "Men Graphic T-shirt" [level=4] [ref=e1055]
+                    - generic [ref=e1056]:
+                      - generic [ref=e1057]:
+                        - generic [ref=e1058]: Rs. 255
+                        - generic [ref=e1059]: Rs. 1299
+                      - text: (80% OFF)
+              - listitem [ref=e1060]:
+                - generic [ref=e1061]:
+                  - generic [ref=e1062]: "4.4"
+                  - generic [ref=e1064]:
+                    - generic [ref=e1065]: "|"
+                    - text: "121"
+                - generic [ref=e1066]: AD
+                - link "Nautica Polo Collar Pure Cotton Tshirt Rs. 560Rs. 1699(67% OFF)" [ref=e1067] [cursor=pointer]:
+                  - /url: tshirts/nautica/nautica-brand-logo-print-pure-cotton-applique-detail-polo-collar-t-shirt/32146686/buy
+                  - generic [ref=e1072]:
+                    - heading "Nautica" [level=3] [ref=e1073]
+                    - heading "Polo Collar Pure Cotton Tshirt" [level=4] [ref=e1074]
+                    - generic [ref=e1075]:
+                      - generic [ref=e1076]:
+                        - generic [ref=e1077]: Rs. 560
+                        - generic [ref=e1078]: Rs. 1699
+                      - text: (67% OFF)
+              - listitem [ref=e1079]
+              - listitem [ref=e1080]
+              - listitem
+              - listitem
+              - listitem
+            - list [ref=e1082]:
+              - listitem: Page 1
+              - listitem: Previous
+              - listitem [ref=e1083]: Page 1 of 7038
+              - listitem [ref=e1084] [cursor=pointer]: Next
+            - generic [ref=e1088]:
+              - generic [ref=e1089]: Similar Products
+              - generic [ref=e1091] [cursor=pointer]: ✕
+    - paragraph [ref=e1095] [cursor=pointer]: UPTO ₹300 OFF
+  - contentinfo [ref=e1099]:
+    - generic [ref=e1100]:
+      - generic [ref=e1101]:
+        - generic [ref=e1102]:
+          - paragraph [ref=e1103]:
+            - link "ONLINE SHOPPING" [ref=e1104] [cursor=pointer]:
+              - /url: /?src=onlineShopping
+          - link "Men" [ref=e1105] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=e1106] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=e1107] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=e1108] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=e1109] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=e1110] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - link "Gift Cards" [ref=e1111] [cursor=pointer]:
+            - /url: /giftcard
+          - link "Myntra Insider" [ref=e1112] [cursor=pointer]:
+            - /url: /myntrainsider?cache=false
+          - paragraph [ref=e1113]: USEFUL LINKS
+          - link "Blog" [ref=e1114] [cursor=pointer]:
+            - /url: http://blog.myntra.com/
+          - link "Careers" [ref=e1115] [cursor=pointer]:
+            - /url: https://careers.myntra.com
+          - link "Site Map" [ref=e1116] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Corporate Information" [ref=e1117] [cursor=pointer]:
+            - /url: /corp-info
+          - link "Whitehat" [ref=e1118] [cursor=pointer]:
+            - /url: /security/whitehat
+          - link "Cleartrip" [ref=e1119] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Myntra Global" [ref=e1120] [cursor=pointer]:
+            - /url: https://www.myntraglobal.com/
+        - generic [ref=e1121]:
+          - paragraph [ref=e1122]: CUSTOMER POLICIES
+          - link "Contact Us" [ref=e1123] [cursor=pointer]:
+            - /url: /contactus
+          - link "FAQ" [ref=e1124] [cursor=pointer]:
+            - /url: /faqs
+          - link "T&C" [ref=e1125] [cursor=pointer]:
+            - /url: /tac
+          - link "Terms Of Use" [ref=e1126] [cursor=pointer]:
+            - /url: /termsofuse
+          - link "Track Orders" [ref=e1127] [cursor=pointer]:
+            - /url: /my/orders
+          - link "Shipping" [ref=e1128] [cursor=pointer]:
+            - /url: /faqs#shipping
+          - link "Cancellation" [ref=e1129] [cursor=pointer]:
+            - /url: /faqs#cancel
+          - link "Privacy policy" [ref=e1130] [cursor=pointer]:
+            - /url: /privacypolicy
+          - link "Grievance Redressal" [ref=e1131] [cursor=pointer]:
+            - /url: /grievanceredressal
+          - link "FSSAI Food Safety Connect app" [ref=e1132] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1133]:
+          - paragraph [ref=e1134]: EXPERIENCE MYNTRA APP ON MOBILE
+          - generic:
+            - link:
+              - /url: https://play.google.com/store/apps/details?id=com.myntra.android
+            - link:
+              - /url: https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059
+          - generic [ref=e1135]: KEEP IN TOUCH
+          - link [ref=e1136] [cursor=pointer]:
+            - /url: https://www.facebook.com/myntra
+          - link:
+            - /url: https://twitter.com/myntra
+          - link:
+            - /url: https://www.youtube.com/user/myntradotcom
+          - link:
+            - /url: https://www.instagram.com/myntra
+        - generic [ref=e1138]:
+          - generic [ref=e1142]:
+            - strong [ref=e1143]: 100% ORIGINAL
+            - text: guarantee for all products at myntra.com
+          - generic [ref=e1147]:
+            - strong [ref=e1148]: Return within 14days
+            - text: of receiving your order
+      - generic [ref=e1150]:
+        - separator [ref=e1151]
+        - generic [ref=e1152]: POPULAR SEARCHES
+        - generic [ref=e1153]:
+          - link "Adidas |" [ref=e1154] [cursor=pointer]:
+            - /url: /adidas
+          - link "Arrow |" [ref=e1155] [cursor=pointer]:
+            - /url: /arrow
+          - link "Fila |" [ref=e1156] [cursor=pointer]:
+            - /url: /fila
+          - link "Online Shopping |" [ref=e1157] [cursor=pointer]:
+            - /url: /
+          - link "Nike |" [ref=e1158] [cursor=pointer]:
+            - /url: /nike
+          - link "Pepe Jeans |" [ref=e1159] [cursor=pointer]:
+            - /url: /pepe-jeans
+          - link "Puma |" [ref=e1160] [cursor=pointer]:
+            - /url: /puma
+          - link "United Colors Of Benetton |" [ref=e1161] [cursor=pointer]:
+            - /url: /united-colors-of-benetton
+          - link "Fastrack |" [ref=e1162] [cursor=pointer]:
+            - /url: /fastrack
+          - link "Shorts |" [ref=e1163] [cursor=pointer]:
+            - /url: /men-shorts
+          - link "Being Human |" [ref=e1164] [cursor=pointer]:
+            - /url: /being-human
+          - link "Skirts |" [ref=e1165] [cursor=pointer]:
+            - /url: /women-shorts-skirts
+          - link "Woodland |" [ref=e1166] [cursor=pointer]:
+            - /url: /woodland
+          - link "Supra |" [ref=e1167] [cursor=pointer]:
+            - /url: /supra
+          - link "Dresses |" [ref=e1168] [cursor=pointer]:
+            - /url: /dresses
+          - link "Clothing |" [ref=e1169] [cursor=pointer]:
+            - /url: /clothing
+          - link "Jewellery |" [ref=e1170] [cursor=pointer]:
+            - /url: /jewellery
+          - link "T Shirts |" [ref=e1171] [cursor=pointer]:
+            - /url: /tshirts
+          - link "Shoes |" [ref=e1172] [cursor=pointer]:
+            - /url: /shoes
+          - link "Bags |" [ref=e1173] [cursor=pointer]:
+            - /url: /bags
+          - link "Watches |" [ref=e1174] [cursor=pointer]:
+            - /url: /watches
+          - link "Caps |" [ref=e1175] [cursor=pointer]:
+            - /url: /caps
+          - link "Shirts |" [ref=e1176] [cursor=pointer]:
+            - /url: /shirts
+          - link "Backpacks |" [ref=e1177] [cursor=pointer]:
+            - /url: /backpacks
+          - link "Flip Flops |" [ref=e1178] [cursor=pointer]:
+            - /url: /flip-flops
+          - link "Sunglasses |" [ref=e1179] [cursor=pointer]:
+            - /url: /sunglasses
+          - link "Kurtas |" [ref=e1180] [cursor=pointer]:
+            - /url: /kurtas
+          - link "Lingerie |" [ref=e1181] [cursor=pointer]:
+            - /url: /lingerie
+          - link "Jackets |" [ref=e1182] [cursor=pointer]:
+            - /url: /jackets
+          - link "Skechers |" [ref=e1183] [cursor=pointer]:
+            - /url: /skechers
+          - link "Saree |" [ref=e1184] [cursor=pointer]:
+            - /url: /saree
+          - link "Sandals |" [ref=e1185] [cursor=pointer]:
+            - /url: /sandals
+          - link "Puma Tshirts |" [ref=e1186] [cursor=pointer]:
+            - /url: /puma-tshirts
+          - link "Woodland Shoes |" [ref=e1187] [cursor=pointer]:
+            - /url: /woodland-shoes
+          - link "Titan Watches |" [ref=e1188] [cursor=pointer]:
+            - /url: /titan-watches
+          - link "Fastrack Watches |" [ref=e1189] [cursor=pointer]:
+            - /url: /fastrack-watches
+          - link "Wrangler Shirts |" [ref=e1190] [cursor=pointer]:
+            - /url: /wrangler-shirts
+          - link "Adidas Tshirts |" [ref=e1191] [cursor=pointer]:
+            - /url: /adidas-tshirts
+          - link "Nike Shoes |" [ref=e1192] [cursor=pointer]:
+            - /url: /nike-shoes
+          - link "Roadster Shirts |" [ref=e1193] [cursor=pointer]:
+            - /url: /roadster-shirts
+          - link "Casual Shoes |" [ref=e1194] [cursor=pointer]:
+            - /url: /casual-shoes
+          - link "Running Shoes |" [ref=e1195] [cursor=pointer]:
+            - /url: /running-shoes
+          - link "Nike Sports Shoes |" [ref=e1196] [cursor=pointer]:
+            - /url: /nike-sports-shoes
+          - link "Jeans |" [ref=e1197] [cursor=pointer]:
+            - /url: /jeans
+          - link "Being Human Tshirts |" [ref=e1198] [cursor=pointer]:
+            - /url: /being-human-tshirts
+          - link "Converse Shoes |" [ref=e1199] [cursor=pointer]:
+            - /url: /converse-shoes
+          - link "Cricket Shoes" [ref=e1200] [cursor=pointer]:
+            - /url: /cricket-shoes
+      - generic [ref=e1201]:
+        - generic [ref=e1202]:
+          - text: In case of any concern,
+          - link "Contact Us" [ref=e1203] [cursor=pointer]:
+            - /url: /contactus
+        - generic [ref=e1204]: © 2026 www.myntra.com. All rights reserved.
+        - link "A Flipkart company" [ref=e1206] [cursor=pointer]:
+          - /url: https://www.flipkart.com/
+  - img [ref=e1210] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import{test} from '@playwright/test';
+  2  | test('titles',async({page})=>{
+  3  |   await page.goto("https://www.myntra.com");
+  4  |   await page.locator('[placeholder="Search for products, brands and more"]').fill("mens tshirt");
+  5  | await page.locator('[class="myntraweb-sprite desktop-iconSearch sprites-search"]').click();
+  6  | await page.waitForTimeout(3000);
+> 7  | await page.waitForLoadState('networkidle');
+     |            ^ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+  8  | const titles = await page.locator(".product-product").allTextContents();
+  9  | console.log("product titles=", titles);
+  10 | titles.forEach((title,index)=>{
+  11 |   console.log('${index + 1}.${title}');
+  12 | 
+  13 | });
+  14 | 
+  15 | await browser.close();
+  16 | })
+```

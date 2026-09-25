@@ -1,0 +1,2 @@
+Product Count: 0
+locator('//div[@role="listitem" and .//div[@data-cy="title-recipe" and contains(., "iPhone 17")] and .//div[@data-cy="reviews-block" and contains(., "4.6")]]')

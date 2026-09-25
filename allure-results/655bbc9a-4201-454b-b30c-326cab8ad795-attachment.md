@@ -1,0 +1,39 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: offline class\amazon_task.spec.js >> iphone search
+- Location: tests\offline class\amazon_task.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.fill: Unknown engine "for" while parsing selector for="twotabsearchtextbox"
+Call log:
+  - waiting for locator('for="twotabsearchtextbox"')
+
+```
+
+# Test source
+
+```ts
+  1  | import { test } from '@playwright/test';
+  2  | test("iphone search",async({page})=>{
+  3  |     await page.goto("https://www.amazon.in/");
+  4  |    
+  5  |     const searchBox = page.locator('for="twotabsearchtextbox"');
+> 6  |     await searchBox.fill("iphone ");
+     |                     ^ Error: locator.fill: Unknown engine "for" while parsing selector for="twotabsearchtextbox"
+  7  |     await page.waitForTimeout(3000);
+  8  |     await page.locator('//div[@aria-rowindex="1"]').click
+  9  |     await page.waitForTimeout(2000)
+  10 |     
+  11 |     
+  12 |     // await searchBox.press("Enter");
+  13 |     // await page.waitForURL(/\/s\?.*(k|field-keywords)=iphone/i);
+  14 | });
+```

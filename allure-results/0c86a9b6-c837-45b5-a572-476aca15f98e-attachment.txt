@@ -1,0 +1,3 @@
+Total products count: 0
+Products priced at or below ₹500:
+Products priced above ₹500:

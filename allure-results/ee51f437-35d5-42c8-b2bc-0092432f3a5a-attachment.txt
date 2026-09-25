@@ -1,0 +1,2 @@
+titles of products= locator('[class="product-base"]')
+count of products= 50

@@ -1,0 +1,4 @@
+Total products count: 1
+Products priced at or below ₹500:
+Products priced above ₹500:
+- Roadster | ₹553

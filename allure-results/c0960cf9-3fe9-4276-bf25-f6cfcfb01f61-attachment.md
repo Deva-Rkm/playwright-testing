@@ -1,0 +1,34 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: duplicatenumbers.spec.js >> duplicate numbers
+- Location: tests\duplicatenumbers.spec.js:2:5
+
+# Error details
+
+```
+TypeError: arr.length is not a function
+```
+
+# Test source
+
+```ts
+  1  | import{test} from '@playwright/test'
+  2  | test("duplicate numbers",async({})=>{
+  3  |     let arr = [10,20,30,40,10,30];
+  4  |     let duplicate = [];
+  5  | 
+> 6  |     for(let i = 0; i<arr.length``;i++){
+     |                                ^ TypeError: arr.length is not a function
+  7  |         for(let j=i+1;j<arr.length;j++){
+  8  |             duplicate.pusharr[i];
+  9  |         }
+  10 | 
+  11 |     }
+  12 | })
+```

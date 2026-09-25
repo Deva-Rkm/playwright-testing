@@ -1,0 +1,365 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: iframe.spec.js >> Frame handling
+- Location: tests\iframe.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.click: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//iframe([@name = "globalSqa"]' is not a valid XPath expression.
+    at Object.queryAll (<anonymous>:6017:25)
+    at InjectedScript._queryEngineAll (<anonymous>:6730:49)
+    at InjectedScript.querySelectorAll (<anonymous>:6717:30)
+    at InjectedScript.querySelector (<anonymous>:6629:25)
+    at eval (eval at evaluate (:302:30), <anonymous>:2:39)
+    at UtilityScript.evaluate (<anonymous>:304:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+Call log:
+  - waiting for locator('//iframe([@name = "globalSqa"]').contentFrame().locator('//h3[text()=JMeter training\']/ancestor::a')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e7]:
+      - generic:
+        - generic:
+          - generic:
+            - button [ref=e8] [cursor=pointer]
+            - textbox "Search..." [ref=e9]
+        - link "pinterest" [ref=e10] [cursor=pointer]:
+          - /url: https://in.pinterest.com/globalsqa/
+        - link "twitter" [ref=e11] [cursor=pointer]:
+          - /url: https://twitter.com/Global_SQA
+        - link "linkedin" [ref=e12] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/globalsqa
+        - link "google" [ref=e13] [cursor=pointer]:
+          - /url: https://plus.google.com/103761557396023531439/posts
+        - link "facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://facebook.com/globalsqa
+        - generic [ref=e16]: contact@globalsqa.com
+    - generic [ref=e19]:
+      - link "GlobalSQA" [ref=e22] [cursor=pointer]:
+        - /url: https://www.globalsqa.com/
+        - img "GlobalSQA" [ref=e23]
+      - generic [ref=e24]:
+        - list:
+          - listitem [ref=e25]:
+            - link "About" [ref=e26] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/about/
+          - listitem [ref=e27]:
+            - link "CheatSheets" [ref=e28] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/cheatsheets/
+          - listitem [ref=e29]:
+            - link "Free Ebooks" [ref=e30] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/free-ebooks/
+              - text: Free Ebooks
+          - listitem [ref=e32]:
+            - link "Tester’s Hub" [ref=e33] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/testers-hub/
+              - text: Tester’s Hub
+            - text:  
+          - listitem [ref=e35]:
+            - link "Contact Us" [ref=e36] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/contact-us/
+    - text:    
+  - generic [ref=e37]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - link "Home" [ref=e43] [cursor=pointer]:
+          - /url: https://www.globalsqa.com/
+          - generic [ref=e44]: Home
+        - link "Demo Testing Site" [ref=e45] [cursor=pointer]:
+          - /url: https://www.globalsqa.com/demo-site/
+          - generic [ref=e46]: Demo Testing Site
+        - link "Frames And Windows" [ref=e47] [cursor=pointer]:
+          - /url: https://www.globalsqa.com/demo-site/frames-and-windows/
+          - generic [ref=e48]: Frames And Windows
+      - heading "Frames And Windows" [level=1] [ref=e50]
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - heading "Interaction" [level=4] [ref=e56]
+          - list [ref=e58]:
+            - listitem [ref=e59]:
+              - link "Sortable" [ref=e60] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/sorting/
+                - generic [ref=e61]: Sortable
+            - listitem [ref=e62]:
+              - link "Drag And Drop" [ref=e63] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/draganddrop/
+                - generic [ref=e64]: Drag And Drop
+            - listitem [ref=e65]:
+              - link "Select Elements" [ref=e66] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/select-elements/
+                - generic [ref=e67]: Select Elements
+            - listitem [ref=e68]:
+              - link "Draggable Boxes" [ref=e69] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/draggableboxes/
+                - generic [ref=e70]: Draggable Boxes
+            - listitem [ref=e71]:
+              - link "DropDown Menu" [ref=e72] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/select-dropdown-menu/
+                - generic [ref=e73]: DropDown Menu
+        - generic [ref=e74]:
+          - heading "Widgets" [level=4] [ref=e75]
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "Tooltip" [ref=e79] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/tooltip/
+                - generic [ref=e80]: Tooltip
+            - listitem [ref=e81]:
+              - link "Sliders" [ref=e82] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/sliders/
+                - generic [ref=e83]: Sliders
+            - listitem [ref=e84]:
+              - link "Spinner" [ref=e85] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/spinner/
+                - generic [ref=e86]: Spinner
+            - listitem [ref=e87]:
+              - link "DatePicker" [ref=e88] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/datepicker/
+                - generic [ref=e89]: DatePicker
+            - listitem [ref=e90]:
+              - link "Progress Bar" [ref=e91] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/progress-bar/
+                - generic [ref=e92]: Progress Bar
+            - listitem [ref=e93]:
+              - link "Dialog Boxes" [ref=e94] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/dialog-boxes/
+                - generic [ref=e95]: Dialog Boxes
+            - listitem [ref=e96]:
+              - link "Auto Complete" [ref=e97] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/auto-complete/
+                - generic [ref=e98]: Auto Complete
+            - listitem [ref=e99]:
+              - link "Accordion And Tabs" [ref=e100] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/demo-site/accordion-and-tabs/
+                - generic [ref=e101]: Accordion And Tabs
+        - iframe [ref=e103]:
+          
+        - generic [ref=e106]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e108]: Discover more
+          - link "Download Productivity Apps" [ref=e109] [cursor=pointer]:
+            - generic "Download Productivity Apps" [ref=e110]
+            - img [ref=e112]
+          - link "Upgrade Laptop Hardware" [ref=e114] [cursor=pointer]:
+            - generic "Upgrade Laptop Hardware" [ref=e115]
+            - img [ref=e117]
+          - link "Book Tech Repair" [ref=e119] [cursor=pointer]:
+            - generic "Book Tech Repair" [ref=e120]
+            - img [ref=e122]
+          - link "Compare Developer Tools" [ref=e124] [cursor=pointer]:
+            - generic "Compare Developer Tools" [ref=e125]
+            - img [ref=e127]
+          - link "Learn Coding Online" [ref=e129] [cursor=pointer]:
+            - generic "Learn Coding Online" [ref=e130]
+            - img [ref=e132]
+          - link "Automation Consulting Services" [ref=e134] [cursor=pointer]:
+            - generic "Automation Consulting Services" [ref=e135]
+            - img [ref=e137]
+          - link "Data Analysis Expertise" [ref=e139] [cursor=pointer]:
+            - generic "Data Analysis Expertise" [ref=e140]
+            - img [ref=e142]
+          - link "Software Development Solutions" [ref=e144] [cursor=pointer]:
+            - generic "Software Development Solutions" [ref=e145]
+            - img [ref=e147]
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - list [ref=e151]:
+            - tab "Open New Tab" [ref=e152] [cursor=pointer]
+            - tab "Open New Window" [ref=e153] [cursor=pointer]
+            - tab "iFrame" [ref=e154] [cursor=pointer]
+          - generic [ref=e156]:
+            - emphasis [ref=e159]:
+              - strong [ref=e160]: Below is an iFrame. If you want to perform any operation in this window, you will need to enter in this iframe.
+            - paragraph [ref=e161]:
+              - iframe [ref=e162]: <br />:
+                - generic [ref=f5e2]:
+                  - banner [ref=f5e3]:
+                    - generic [ref=f5e7]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button [ref=f5e8] [cursor=pointer]
+                            - textbox "Search..." [ref=f5e9]
+                        - link "pinterest" [ref=f5e10] [cursor=pointer]:
+                          - /url: https://in.pinterest.com/globalsqa/
+                        - link "twitter" [ref=f5e11] [cursor=pointer]:
+                          - /url: https://twitter.com/Global_SQA
+                        - link "linkedin" [ref=f5e12] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/globalsqa
+                        - link "google" [ref=f5e13] [cursor=pointer]:
+                          - /url: https://plus.google.com/103761557396023531439/posts
+                        - link "facebook" [ref=f5e14] [cursor=pointer]:
+                          - /url: https://facebook.com/globalsqa
+                        - generic [ref=f5e16]: contact@globalsqa.com
+                    - generic [ref=f5e19]:
+                      - link "GlobalSQA" [ref=f5e22] [cursor=pointer]:
+                        - /url: https://www.globalsqa.com/
+                        - img "GlobalSQA" [ref=f5e23]
+                      - generic:  
+                    - text:    
+                  - generic [ref=f5e25]:
+                    - generic [ref=f5e29]:
+                      - generic [ref=f5e30]:
+                        - link "Home" [ref=f5e31] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/
+                          - generic [ref=f5e32]: Home
+                        - link "Trainings" [ref=f5e33] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/trainings/
+                          - generic [ref=f5e34]: Trainings
+                      - heading "Trainings" [level=1] [ref=f5e36]
+                    - generic [ref=f5e38]:
+                      - generic [ref=f5e41] [cursor=pointer]: All
+                      - generic [ref=f5e42]:
+                        - link "Selenium Online Training Selenium 3.0 Training Automation" [ref=f5e44] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/selenium-online-training/
+                          - generic [ref=f5e46]:
+                            - img "Selenium Online Training" [ref=f5e50]
+                            - generic [ref=f5e53]:
+                              - heading "Selenium 3.0 Training" [level=3] [ref=f5e55]
+                              - paragraph [ref=f5e56]: Automation
+                        - link "SAP Hybris Training SAP Hybris Training" [ref=f5e58] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/sap-hybris-online-training/
+                          - generic [ref=f5e60]:
+                            - img "SAP Hybris Training" [ref=f5e64]
+                            - generic [ref=f5e67]:
+                              - heading "SAP Hybris Training" [level=3] [ref=f5e69]
+                              - paragraph
+                        - link "Mobile Application Testing Training Mobile Application Testing Training Software Testing" [ref=f5e71] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/mobile-apps-testing-online-training/
+                          - generic [ref=f5e73]:
+                            - img "Mobile Application Testing Training" [ref=f5e77]
+                            - generic [ref=f5e80]:
+                              - heading "Mobile Application Testing Training" [level=3] [ref=f5e82]
+                              - paragraph [ref=f5e83]: Software Testing
+                        - link "Manual Online Testing Training Manual Testing Training Software Testing" [ref=f5e85] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/manual-testing-training/
+                          - generic [ref=f5e87]:
+                            - img "Manual Online Testing Training" [ref=f5e91]
+                            - generic [ref=f5e94]:
+                              - heading "Manual Testing Training" [level=3] [ref=f5e96]
+                              - paragraph [ref=f5e97]: Software Testing
+                        - link "JMeter Training JMeter Training Performance Testing / Software Testing" [ref=f5e99] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/jmeter-training/
+                          - generic [ref=f5e101]:
+                            - img "JMeter Training" [ref=f5e105]
+                            - generic [ref=f5e108]:
+                              - heading "JMeter Training" [level=3] [ref=f5e110]
+                              - paragraph [ref=f5e111]: Performance Testing / Software Testing
+                        - link "LoadRunner Training HP LoadRunner Training Performance Testing" [ref=f5e113] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/hp-load-runner-online-training/
+                          - generic [ref=f5e115]:
+                            - img "LoadRunner Training" [ref=f5e119]
+                            - generic [ref=f5e122]:
+                              - heading "HP LoadRunner Training" [level=3] [ref=f5e124]
+                              - paragraph [ref=f5e125]: Performance Testing
+                        - link "Database Testing Training Database Testing Training" [ref=f5e127] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/database-testing-training/
+                          - generic [ref=f5e129]:
+                            - img "Database Testing Training" [ref=f5e133]
+                            - generic [ref=f5e136]:
+                              - heading "Database Testing Training" [level=3] [ref=f5e138]
+                              - paragraph
+                        - link "Calabash Mobile App Automation Training Calabash Training Automation / Performance Testing" [ref=f5e140] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/calabash-training/
+                          - generic [ref=f5e142]:
+                            - img "Calabash Mobile App Automation Training" [ref=f5e146]
+                            - generic [ref=f5e149]:
+                              - heading "Calabash Training" [level=3] [ref=f5e151]
+                              - paragraph [ref=f5e152]: Automation / Performance Testing
+                        - link "Appium Training Appium Training Automation / Software Testing" [ref=f5e154] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/training/appium-online-training/
+                          - generic [ref=f5e156]:
+                            - img "Appium Training" [ref=f5e160]
+                            - generic [ref=f5e163]:
+                              - heading "Appium Training" [level=3] [ref=f5e165]
+                              - paragraph [ref=f5e166]: Automation / Software Testing
+                  - generic [ref=f5e168]:
+                    - generic [ref=f5e170]:
+                      - generic [ref=f5e171]:
+                        - heading "Footer Widget Area 1" [level=3] [ref=f5e172]
+                        - paragraph [ref=f5e173]:
+                          - link "Assign a widget to this area now." [ref=f5e174] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                      - generic [ref=f5e175]:
+                        - heading "Footer Widget Area 2" [level=3] [ref=f5e176]
+                        - paragraph [ref=f5e177]:
+                          - link "Assign a widget to this area now." [ref=f5e178] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                      - generic [ref=f5e179]:
+                        - heading "Footer Widget Area 3" [level=3] [ref=f5e180]
+                        - paragraph [ref=f5e181]:
+                          - link "Assign a widget to this area now." [ref=f5e182] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                      - generic [ref=f5e183]:
+                        - heading "Footer Widget Area 4" [level=3] [ref=f5e184]
+                        - paragraph [ref=f5e185]:
+                          - link "Assign a widget to this area now." [ref=f5e186] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                    - generic [ref=f5e190]:
+                      - insertion [ref=f5e192]
+                      - generic [ref=f5e194]:
+                        - link "pinterest" [ref=f5e195] [cursor=pointer]:
+                          - /url: https://in.pinterest.com/globalsqa/
+                        - link "twitter" [ref=f5e196] [cursor=pointer]:
+                          - /url: https://twitter.com/Global_SQA
+                        - link "linkedin" [ref=f5e197] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/globalsqa
+                        - link "google" [ref=f5e198] [cursor=pointer]:
+                          - /url: https://plus.google.com/103761557396023531439/posts
+                        - link "facebook" [ref=f5e199] [cursor=pointer]:
+                          - /url: https://facebook.com/globalsqa
+                        - generic [ref=f5e200]:
+                          - text: "Website Designed & Developed by :"
+                          - link "GlobalSQA" [ref=f5e201] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com
+        - paragraph [ref=e163]
+  - generic [ref=e164]:
+    - generic [ref=e166]:
+      - generic [ref=e167]:
+        - heading "Footer Widget Area 1" [level=3] [ref=e168]
+        - paragraph [ref=e169]:
+          - link "Assign a widget to this area now." [ref=e170] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+      - generic [ref=e171]:
+        - heading "Footer Widget Area 2" [level=3] [ref=e172]
+        - paragraph [ref=e173]:
+          - link "Assign a widget to this area now." [ref=e174] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+      - generic [ref=e175]:
+        - heading "Footer Widget Area 3" [level=3] [ref=e176]
+        - paragraph [ref=e177]:
+          - link "Assign a widget to this area now." [ref=e178] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+      - generic [ref=e179]:
+        - heading "Footer Widget Area 4" [level=3] [ref=e180]
+        - paragraph [ref=e181]:
+          - link "Assign a widget to this area now." [ref=e182] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/wp-admin/widgets.php
+    - generic [ref=e187]:
+      - link "pinterest" [ref=e188] [cursor=pointer]:
+        - /url: https://in.pinterest.com/globalsqa/
+      - link "twitter" [ref=e189] [cursor=pointer]:
+        - /url: https://twitter.com/Global_SQA
+      - link "linkedin" [ref=e190] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/globalsqa
+      - link "google" [ref=e191] [cursor=pointer]:
+        - /url: https://plus.google.com/103761557396023531439/posts
+      - link "facebook" [ref=e192] [cursor=pointer]:
+        - /url: https://facebook.com/globalsqa
+      - generic [ref=e193]:
+        - text: "Website Designed & Developed by :"
+        - link "GlobalSQA" [ref=e194] [cursor=pointer]:
+          - /url: https://www.globalsqa.com
+```

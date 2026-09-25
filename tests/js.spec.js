@@ -1,0 +1,32 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('http://danube-web.shop/');
+  await page.getByRole('link').click();
+  await page.getByText('Haben oder haben Fric Eromm ★★★★☆ $').click();
+  await page.getByRole('button', { name: 'Add to cart' }).click();
+  await page.getByRole('button', { name: 'Checkout' }).click();
+  await page.getByRole('textbox', { name: 'Name', exact: true }).click();
+  await page.getByRole('textbox', { name: 'Name', exact: true }).fill('qwert');
+  await page.getByRole('textbox', { name: 'Name', exact: true }).press('Tab');
+  await page.getByRole('textbox', { name: 'Surname' }).fill('wert');
+  await page.getByRole('textbox', { name: 'Surname' }).press('Tab');
+  await page.getByRole('textbox', { name: 'Address' }).fill('sdfgh');
+  await page.getByRole('textbox', { name: 'Address' }).press('Tab');
+  await page.getByRole('textbox', { name: 'Zipcode' }).fill('dfgh');
+  await page.getByRole('textbox', { name: 'Zipcode' }).press('Tab');
+  await page.getByRole('textbox', { name: 'City' }).fill('sdfg');
+  await page.getByRole('textbox', { name: 'City' }).press('Tab');
+  await page.getByRole('textbox', { name: 'Company (optional)' }).fill('sdfg');
+  await page.getByRole('radio', { name: 'as soon as possible' }).check();
+  await page.getByRole('radio', { name: 'as soon as possible' }).press('ArrowDown');
+  await page.getByRole('radio', { name: 'in a single package' }).press('ArrowDown');
+  await page.getByRole('radio', { name: 'as soon as possible' }).press('ArrowDown');
+  await page.getByRole('radio', { name: 'in a single package' }).press('ArrowUp');
+  await page.getByRole('radio', { name: 'as soon as possible' }).click();
+  await page.getByText('I would like the items to be shipped as soon as possible in a single package').click();
+  await page.locator('body').press('ControlOrMeta+-');
+  await page.locator('body').press('ControlOrMeta+-');
+  await page.getByRole('button', { name: 'Buy' }).click();
+  await page.getByText('All good, order is on the way').click();
+});
